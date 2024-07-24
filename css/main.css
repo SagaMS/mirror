@@ -221,16 +221,28 @@ color: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 1280px;
     height: 588px;
+    left: 0px;
 
-    top: 80px;
-    left: 40px;
+}
+
+.about-block-inner{
+    width: 1200px;
+    height: 408px;
+    left: calc(50% - 1200px/2);
+    top: calc(50% - 408px/2 - 10px);
+    display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px 175px;
+gap: 120px;
 
 }
 
 .dog-and-cat{
     width: 300px;
     height: 408px;
-    left: 175px;
+
 
 }
 
@@ -292,7 +304,7 @@ color: #FFFFFF;
 
 
 
-
+/* Our frends */
 
 .our-friends{
     background-color: #F6F6F6; 
@@ -307,8 +319,11 @@ color: #FFFFFF;
     height: 697px;
     left: calc(50% - 1200px/2);
     top: 80px;
+  
 }
-
+.our-friends-inner-block a{
+    text-decoration: none;
+}
 
 .animal-heading-block{
 
@@ -317,12 +332,18 @@ color: #FFFFFF;
     height: 90px;
     left: 400px;
     top: 0px;
+    display: flex;
+    justify-content: center;
 
 
 } 
 
 
 .animal-heading{
+  
+
+align-items: center;
+text-align: center;
 
     /* h3 */
 font-family: 'Georgia';
@@ -331,20 +352,15 @@ font-weight: 400;
 font-size: 35px;
 line-height: 45px;
 
-
-display: flex;
-align-items: center;
-text-align: center;
-
-
-
 letter-spacing: 0.06em;
 
 /* color-dark-l */
 color: #545454;
 
-
 }
+
+
+
 
 
 .animals{
@@ -354,17 +370,39 @@ height: 435px;
 left: 0px;
 top: 150px;
 display: flex;
-justify-content:space-around;
+justify-content:space-between;
 }
 
 .pet{
- 
+    
     width: 270px;
     height: 435px;
 }
 
+.katrine{
+    margin-left: -35px;
+}
+.woody{
+    margin-right: -33px;
+}
+
+.pet-photo{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 37.93%;
+    border-radius: 9px 9px 0px 0px;
+
+}
+
 .animal-name{
 
+position: absolute;
+width: 74px;
+height: 23px;
+left: 98px;
+top: 300px;    
     
 /* pets-card-title */
 font-family: 'Georgia';
@@ -383,6 +421,42 @@ color: #545454;
 
 }
 
+
+.learn-more-link{
+    padding: 15px 45px;
+
+/* color-primary */
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+
+/* Learn more */
+
+width: 97px;
+height: 22px;
+
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 130%;
+/* identical to box height, or 22px */
+letter-spacing: 0.06em;
+
+/* color-dark-3xl */
+color: #292929;
+
+
+position: absolute;
+width: 187px;
+height: 52px;
+left: 41.5px;
+top: 353px;
+white-space: nowrap;
+
+}
+
+
+
 .arrow{
     /* color-primary */
     border: 2px solid #F1CDB3;
@@ -391,8 +465,14 @@ color: #545454;
     height: 52px;
     top: 192px;
 
+
 }
 
+.arrow-span{
+    
+    position: absolute;
+    text-align: center;
+}
 
 .animal-block-footer-link{
 
@@ -427,50 +507,330 @@ color: #545454;
 }
 
 
-.learn-more-link{
-    padding: 15px 45px;
-    width: 187px;
-    height: 52px;
-/* color-primary */
-    border: 2px solid #F1CDB3;
-    border-radius: 100px;
-
-/* Learn more */
-
-width: 97px;
-height: 22px;
-
-font-family: 'Georgia';
-font-style: normal;
-font-weight: 400;
-font-size: 17px;
-line-height: 130%;
-/* identical to box height, or 22px */
-letter-spacing: 0.06em;
-
-/* color-dark-3xl */
-color: #292929;
-
-}
 
 
 
 
-
-
-
-
+/* Help */
 
 
 .help{
-    background-color: #aa7d92; 
+    background-color: #F6F6F6; 
     width: 1280px;
     height: 611px;
 }
 
+
+.help-block{
+
+    position: absolute;
+    width: 1200px;
+    height: 431px;
+    left: calc(50% - 1200px/2);
+    top: 80px;
+
+}
+
+.icon-help-block{
+    position: absolute;
+    width: 1026px;
+    height: 281px;
+    left: 87px;
+    top: 150px;
+
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+     gap: 55px 120px; 
+
+}
+
+.help-block-header{
+/* Heading */
+
+position: absolute;
+width: 308px;
+height: 90px;
+left: 446px;
+top: 0px;
+
+}
+
+
+.help-block-header h3{
+    position: absolute;
+    /* h3 */
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45px;
+ 
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    
+    /* color-dark-l */
+    color: #545454;
+    white-space: nowrap;
+    }
+    
+
+
+.icon-help{
+    height: 113px;
+    text-align: center;
+}
+
+.food{
+    width: 82px;
+}
+.transport{
+    width: 150px;
+}
+.toys{
+    width: 60px;
+}
+.bowls{
+    width: 153px;
+}
+.shampoon{
+    width: 101px;
+}
+.vitamins{
+    width:89px; 
+    margin-left:85px;
+}
+.medicines{
+    width:101px; 
+}
+.collars{
+    width: 165px;
+}
+.sleep{
+    width: 143px;
+    margin-right:82px;
+}
+
+
+.help-image{
+    height: 60px;
+    top: 0px;
+
+
+
+}
+
+.help-image-name{
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+
+
+
+    
+/* h4 */
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 115%;
+/* identical to box height, or 23px */
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+
+/* color-dark-l */
+color: #545454;
+
+white-space: nowrap;
+}
+
+
+
+
+/* Donation block  */
+
+
+
 .in-addition{
-    background-color: #a2aa7d; 
+    background-color: #F6F6F6; 
     width: 1280px;
     height: 462px;
 }
 
+
+.in-addition-inner-block{
+    position: absolute;
+    width: 915px;
+    height: 282px;
+    left: calc(50% - 915px/2 + 0.5px);
+    top: 80px;
+
+}
+
+.puppy-in-addition{
+    position: absolute;
+    width: 505px;
+    height: 261px;
+    left: 0px;
+    top: 11px;
+}
+
+.donation-info{
+    position: absolute;
+    width: 380px;
+    height: 282px;
+    left: 535px;
+    top: 0px;
+
+
+}
+
+.donation-info-heading{
+    position: absolute;
+width: 300px;
+height: 90px;
+left: 0px;
+top: 0px;
+
+}
+.donation-info-heading h3{
+/* h3 */
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 45px;
+/* or 45px */
+display: flex;
+align-items: center;
+letter-spacing: 0.06em;
+
+/* color-dark-l */
+color: #545454;
+/*!!!!!*/
+text-align: start;
+white-space: nowrap; 
+}
+.subheading-donation{
+    /* Subheading */
+
+position: absolute;
+width: 307px;
+height: 17px;
+left: 0px;
+top: 110px;
+
+/* h5 */
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 110%;
+/* identical to box height, or 17px */
+display: flex;
+align-items: center;
+letter-spacing: 0.06em;
+
+/* color-dark-l */
+color: #545454;
+white-space: nowrap; 
+
+
+}
+
+.credit-cart-block{
+
+    position: absolute;
+    width: 349px;
+    height: 43px;
+    left: 0px;
+    top: 147px;
+
+    /* color-primary */
+    background: #F1CDB3;
+    border-radius: 9px;
+
+}
+
+
+
+.credit-card-content{
+    width: 319px;
+    height: 23px;
+
+}
+
+
+.credit-card-content-image{
+        /* credit-card */
+
+    position: absolute;
+    width: 30px;
+    height: 23px;
+    left: 15px;
+    top: 10px;
+
+ 
+
+}
+
+
+
+.credit-card-content-number{
+    position: absolute;
+    width: 274px;
+    height: 23px;
+    left: 60px;
+    top: 10px;
+    
+
+
+}
+.credit-card-content-number h4{
+    /* h4 */
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    /* identical to box height, or 23px */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    
+    /* color-dark-l */
+    color: #545454;
+    white-space: nowrap;
+    
+}
+
+.legal-info-payment-block{
+    position: absolute;
+    width: 380px;
+    height: 72px;
+    left: 0px;
+    top: 210px;
+    
+}
+
+.legal-info-payment{
+    /* donation-description */
+font-family: 'Arial';
+font-style: italic;
+font-weight: 400;
+font-size: 12px;
+line-height: 18px;
+/* or 150% */
+display: flex;
+align-items: center;
+
+/* color-dark-m */
+color: #B2B2B2;
+
+}
