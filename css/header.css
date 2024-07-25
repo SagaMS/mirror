@@ -57,21 +57,13 @@ white-space: nowrap;
 
 
 
-.main-header{
-    position: absolute;
-    width: 1200px;
-    height: 60px;
-    top:30px;
-    left:40px;
-    display: flex;
-    justify-content: space-between;
 
-}
 
 .navigation{
     position: absolute;
     width: 443px;
     height: 27px;
+    /* left: 757px; */
     left: 757px;
     top: 16px;
 
@@ -89,4 +81,18 @@ white-space: nowrap;
 .main-link{
     text-decoration: none;
 
+}
+
+
+.nav-links{
+    /* paragraph-l */
+font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 24px;
+/* identical to box height, or 24px */
+
+/* color-light-s */
+color: #FAFAFA;
 }

@@ -1,6 +1,24 @@
+.main-header{
+    position: absolute;
+    width: 1200px;
+    height: 60px;
+    top:30px;
+    left:39px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.our-pets-link{
+    left: -15px;
+}
+.help-shelter-link{
+    left: -10px;
+}
+
 .about-link::after {
     content: "";
-    width: 114px;
+    width: 116.5px;
     height: 3px;
     
     /* background-color: var(--c-title-underline-color); */
@@ -8,8 +26,8 @@
     
     position: absolute;
     bottom: -8px;
-    left: 0;
-}
+    left:-2px; 
+} 
 
 
 .logo-header{
@@ -343,7 +361,7 @@ color: #545454;
 }
 
 
-.learn-more-link{
+.learn-more{
     padding: 15px 45px;
 
 /* color-primary */
@@ -375,6 +393,31 @@ top: 353px;
 white-space: nowrap;
 
 }
+
+
+.learn-more a{
+    text-decoration: none;
+    color: #292929;
+}
+
+.learn-more a:link, 
+.learn-more a:visited{
+    text-decoration: none;
+    color: #292929;
+}
+
+
+
+.pet:hover{
+    cursor: pointer;
+}
+
+.pet:hover .learn-more{
+    background-color: #FDDCC4;
+    transition: background-color 0.7s ease-in-out;
+}
+
+
 
 
 
