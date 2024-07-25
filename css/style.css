@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  
+
+html, body {
+    height: 100%;
+}
+html {
+    display: table;
+    margin: auto;
+}
+body {
+    min-width: 1280px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*FOOTER*/
+
+.footer{
+    background: url(noise_lines_transparent@2X.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+    width: 1280px;
+    height: 350px;
+}
+
+.footer-inner-block{
+    position: absolute;
+    width: 1200px;
+    height: 310px;
+    left: 40px;
+    top: 40px;
+
+
+}
+
+.footer-inner-block h4{
+        /* h4 */
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    /* identical to box height, or 23px */
+    letter-spacing: 0.06em;
+
+    /* color-primary */
+    color: #F1CDB3;
+
+}
+.footer-question{
+    position: absolute;
+    width: 278px;
+    height: 234px;
+    left: 0px;
+    top: 16px;
+
+
+}
+
+.footer-adress{
+    /* Locations */
+
+    position: absolute;
+    width: 302px;
+    height: 234px;
+    left: 438px;
+    top: 16px;
+
+
+}
+/*left section*/
+.footer-contacts-header{
+    position: absolute;
+    width: 278px;
+    height: 90px;
+    left: calc(50% - 278px/2 - 0px);
+    top: 0px;
+
+}
+
+.footer-contacts-header h3{
+    /* h3 */
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 130%;
+/* or 45px */
+letter-spacing: 0.06em;
+
+/* color-light-xl */
+color: #FFFFFF;
+white-space: nowrap;
+
+}
+.footer-email{
+    position: absolute;
+    width: 251px;
+    height: 32px;
+    left: 0px;
+    top: 130px;
+
+}
+.email-footer-text{
+    position: absolute;
+    width: 191px;
+    height: 23px;
+    left: 59.5px;
+    top: 5px;
+
+}
+
+
+
+.footer-number{
+    /* Phone */
+
+    position: absolute;
+    width: 239px;
+    height: 32px;
+    left: 0px;
+    top: 206px;
+    white-space: nowrap;
+
+
+}
+
+
+.footer-number-image{
+    position: absolute;
+    width: 40px;
+    height: 32px;
+    left:0;
+    top:-4px;
+    
+}
+
+.footer-number-text{
+    position: absolute;
+    width: 179px;
+    height: 23px;
+    left: 59.5px;
+    top: 0px;
+}
+
+/*rigth section*/
+.footer-adress-header{
+    position: absolute;
+    width: 270px;
+    height: 90px;
+    left: calc(50% - 270px/2 - 15px);
+    top: 0px;
+
+}
+
+.footer-adress-header h3{
+/* h3 */
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 130%;
+/* or 45px */
+letter-spacing: 0.06em;
+
+/* color-light-xl */
+color: #FFFFFF;
+white-space: nowrap;
+
+
+}
+
+
+
+
+.footer-boston-adress{
+    position: absolute;
+    width: 302px;
+    height: 46px;
+    left: 0px;
+    top: 124px;
+    white-space: nowrap;
+
+}
+
+
+.footer-boston-adress-image{
+    position: absolute;
+    width: 22px;
+    height: 32px;
+    left: calc(50% - 22px/2 - 140px);
+    top: 5px;
+    
+}
+
+
+.footer-boston-adress-text{
+    position: absolute;
+    width: 260px;
+    height: 46px;
+    left: 41.5px;
+    top: 1px;
+
+}
+
+.footer-london-adress{
+    /* London */
+
+    position: absolute;
+    width: 302px;
+    height: 32px;
+    left: 0px;
+    top: 202px;
+    white-space: nowrap;
+
+
+}
+
+
+.footer-london-adress-image{
+    position: absolute;
+    width: 22px;
+    height: 32px;
+    left: calc(50% - 22px/2 - 140px);
+    top: 0.5px;
+}
+
+
+.footer-london-adress-text{
+    position: absolute;
+    width: 260px;
+    height: 46px;
+    left: 41.5px;
+    top: 5px;
+}
+
+
+
+.footer-puppy-conteiner{
+
+    position: absolute;
+    width: 300px;
+    height: 310px;
+    left: calc(50% - 300px/2 + 450px);
+    top: 0px;
+}
