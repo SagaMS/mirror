@@ -385,9 +385,6 @@ white-space: nowrap;
     width: 52px;
     height: 52px;
     top: 192px;
-    display: flex;
-    align-items: center;
-    text-align: center;
 
 
 }
@@ -401,6 +398,11 @@ white-space: nowrap;
     }
 
 
+.arrow-image{
+    width: 14px;
+    height: 6px;
+    top:13px;
+}
 
 
 
@@ -408,7 +410,6 @@ white-space: nowrap;
 
 
 
-    
 .animal-block-footer-link{
 
     display: flex;
