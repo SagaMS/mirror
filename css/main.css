@@ -385,16 +385,30 @@ white-space: nowrap;
     width: 52px;
     height: 52px;
     top: 192px;
-
-
-}
-
-.arrow-span{
-    
-    position: absolute;
+    display: flex;
+    align-items: center;
     text-align: center;
+
+
 }
 
+.arrow-block{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    }
+
+
+
+
+
+
+
+
+
+    
 .animal-block-footer-link{
 
     display: flex;
