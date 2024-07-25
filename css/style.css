@@ -13,11 +13,20 @@ html, body {
 html {
     display: table;
     margin: auto;
+    scroll-behavior: smooth;
 }
+
+
 body {
     min-width: 1280px;
     display: table-cell;
     vertical-align: middle;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #545454;
 }
 
 /*FOOTER*/
@@ -78,7 +87,8 @@ body {
     position: absolute;
     width: 278px;
     height: 90px;
-    left: calc(50% - 278px/2 - 0px);
+
+    left: 2.0px;
     top: 0px;
 
 }
@@ -204,7 +214,7 @@ white-space: nowrap;
     width: 260px;
     height: 46px;
     left: 41.5px;
-    top: 1px;
+    top: 0px;
 
 }
 
@@ -239,6 +249,15 @@ white-space: nowrap;
     top: 5px;
 }
 
+.footer-adress-direction-image{
+    
+    position: absolute;
+    width: 22px;
+    height: 32px;
+    left: 151px;
+    top: 0px;
+
+}
 
 
 .footer-puppy-conteiner{
