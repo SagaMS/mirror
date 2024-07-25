@@ -1,8 +1,55 @@
 .header-pets{
-    background-color: #bd1d8d; 
-    width: 1280px;
+   /* Header-container */
+
+   
     height: 120px;
+    left: 0%;
+    right: 0%;
+    top: 0px;
+
+    /* color-light-xl */
+    background: #FFFFFF;
+    /* color-dark-l */
+    color: #545454;
+
 }
+
+.about-link::after {
+    content: "";
+    width: 54px;
+    height: 3px;
+    
+    /* background-color: var(--c-title-underline-color); */
+    background: #F1CDB3;
+    
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+}
+.logo-header{
+    /* color-dark-l */
+    color: #545454;
+
+}
+
+.logo-text{
+    /* color-dark-l */
+    color: #545454;
+
+}
+
+.navigation li{
+    color: #545454;
+}
+
+.main-link{
+    color: #545454;
+}
+
+
+
+
+/*Friends Section*/
 
 .friends{
     background-color: #bd5f1d; 
