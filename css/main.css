@@ -34,6 +34,10 @@
      /* colorl */
     color: #F1CDB3;
 }
+.logo-header a{
+    text-decoration: none;
+    color: #F1CDB3;}
+
 
 .logo-text{
 
@@ -41,12 +45,23 @@
     color: #FFFFFF;
 }
 
-.navigation li{
-    color: #CDCDCD;
-}
+
 
 .main-link{
-    color: #FAFAFA;
+   color:  #CDCDCD; 
+
+}
+
+.main-link:hover{
+    cursor: pointer;
+    color:  #FAFAFA;
+    transition: color 0.2s ease-in-out;
+}
+
+.about-link{
+    color:  #FAFAFA;
+    pointer-events: none;
+    cursor: default;
 }
 
 /* Start Screen */
@@ -96,6 +111,17 @@ h2{
     align-items: center;
 
 }
+
+.button-main{
+    cursor: pointer;
+}
+
+
+.button-main:hover{
+    background: #fddcc4;
+    transition: background-color 0.4s ease-in-out;
+}
+
 .text-make-fr{
     position: absolute;
     width: 117px;
@@ -109,10 +135,12 @@ h2{
     letter-spacing: 0.06em;
     color: #292929;
     white-space: nowrap;
-
-
-    
+ 
 }
+
+
+
+
 
 
 .start-screen{
@@ -121,7 +149,7 @@ color: #FFFFFF;
  height: 908px;
  top: 0;
  left: 0;
- background: url(noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%)  #211F20;
+ 
 }
 
 
@@ -448,6 +476,17 @@ white-space: nowrap;
 }
 
 
+.arrow{
+    cursor: pointer;
+}
+
+
+
+.arrow:hover{
+    background-color: #F1CDB3;
+    transition: background-color 0.6s ease-in-out;
+
+} 
 
 
 
@@ -486,9 +525,14 @@ white-space: nowrap;
 }
 
 
+.animal-block-footer-link {
+    cursor: pointer;
+}
 
-
-
+.animal-block-footer-link:hover{
+    background: #fddcc4;
+    transition: background-color 0.4s ease-in-out;
+}
 
 /* Help */
 
