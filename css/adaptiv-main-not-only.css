@@ -1,0 +1,393 @@
+@media only screen and (min-width: 320px) {
+ .main-section-main-page{
+        width: 100%;
+        max-width: 320px;
+        top: 0px;
+    } 
+
+    .about{
+        max-width: 320px;
+        max-height: 974px;
+        height: 974px;
+        width: 320px;
+        left: 0px;
+        top: 0px;
+    
+    }
+
+    .about-block-inner{
+        max-width: 300px;
+        max-height: 890px;
+        left: 10px;
+        top: 0px;
+        display:flex;
+        flex-direction: column;
+   
+    }
+
+    .dog-and-cat{
+        max-width: 260px;
+        max-height: 353.6px;
+        width: 260px;
+        height: 353.6px;
+        top: 580px;
+        left: 18px;
+    }
+
+    .text-about{
+        position: absolute;
+        top: 155px;
+        left: 0px;
+        max-width: 300px;
+        max-height: 494px;
+        width: 300px;
+        height: 494px;
+        color: #4C4C4C;
+    }
+    .cozy-header{
+        position: absolute;
+        max-width: 300px;
+        max-height: 64px;
+       
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height:  32px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        top: -111px;
+        left: 42px;
+    }
+
+    .cozy-paragraph1{
+        max-width: 270px;
+        max-height: 144px;
+        width: 270px;
+        height: 144px;
+        top: -23px;
+        left: 16.9px;
+        text-align: justify;
+    
+    }
+
+    .cozy-paragraph2{
+        max-width: 270px;
+        max-height: 239px;
+        width: 270px;
+        height: 239px;
+        text-align: left;
+        top: 0px;
+        left: 16.9px;
+        text-align: justify;
+
+
+    }
+}
+
+@media only screen and (min-width: 470px) {
+
+    .text-about{
+        color: #4C4C4C;
+        top: 200px;
+    }
+
+    .about{
+        max-width: 470px;
+        max-height: 974px;
+        height: 974px;
+        width: 470px;
+        left: 0px;
+        top: 0px;
+    
+    }
+
+ 
+
+    .cozy-paragraph1{
+        max-width: 320px;
+        max-height: 144px;
+        width: 320px;
+        height: 144px;
+    
+    }
+    
+
+    .cozy-paragraph2{
+        max-width: 320px;
+        max-height: 239px;
+        width: 320px;
+        height: 239px;
+        top: 10px;
+    }
+
+    .dog-and-cat{
+
+        left: 15px;
+    }
+
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    .about{
+        max-width: 768px;
+        max-height: 1048px;
+        height: 1048px;
+        width: 768px;
+        left: 0px;
+        top: 0px;
+    
+    }
+
+
+    
+    .about-block-inner{
+        position: absolute;
+        max-width: 437px;
+        max-height: 868px;
+        width: 437px;
+        height: 868px;
+        left: -59px;
+        top: calc(50% - 868px/2 - 10px);
+        
+     
+   
+    }
+
+
+
+    .dog-and-cat{
+        position: absolute;
+        max-width: 300px;
+        max-height: 408px;
+        width: 300px;
+        height: 408px;
+        left: 69px;
+        top: 460px;
+
+    }
+    .text-about{
+        left: 4px;
+        top: 0px;
+        position: absolute;
+        max-width: 430px;
+        max-height: 380px; 
+        width: 430px;
+        height: 380px; 
+        color: #4C4C4C;
+       
+    }
+    .cozy-header{
+
+
+        position: absolute;
+        max-width: 370px;
+        max-height: 90px;
+        width: 370px;
+        height: 90px;
+        left: 0px;
+        top: 0px;
+
+     
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 45px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.06em;
+        text-align: left;
+
+        
+       
+    }
+
+    .cozy-paragraph1{
+        position: absolute;
+        max-width: 430px;
+        max-height: 96px;
+        width: 430px;
+        height: 144px;
+        left: 0px;
+        top: 115px;
+        text-align: left;
+      
+    
+    }
+
+    .cozy-paragraph2{
+        max-width: 430px;
+        max-height: 144px;
+        width: 430px;
+        height: 144px;
+        left: 0px;
+        top: 236px;
+        text-align: left;
+
+
+
+    }
+
+
+
+
+}
+
+
+@media only screen and (min-width: 1000px) {
+
+    .main-section-main-page{
+        width: 100%;
+        max-width: 1000px;
+        top: 0px;
+    } 
+   
+
+    .about{
+        max-width: 1000px;
+        max-height: 588px;
+        width: 1000px;
+        height: 588px;
+        left: 10px;
+    }
+ 
+    .about-block-inner{
+        position: absolute;
+        max-width: 900px;
+        max-height: 408px;
+        width: 900px;
+        height: 408px;
+        left: 50px;
+        top: calc(50% - 408px/2 - 10px);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+        padding: 0px 175px;
+        gap: 60px;
+
+    }
+
+
+    .dog-and-cat{
+        position: absolute;
+        top:0px;
+        left: 20px;
+    }
+
+    .text-about{
+        left: 370px;
+        position: absolute;
+        right: 20px;
+        top:0px;
+        color: #4C4C4C;
+    }
+}
+
+@media only screen and (min-width: 1150px) {
+
+    .main-section-main-page{
+        width: 100%;
+        max-width: 1150px;
+      
+    } 
+   
+    .about{
+        max-width: 1150px;
+        max-height: 588px;
+        width: 1150px;
+        height: 588px;
+        left: 10px;
+    }
+
+    .dog-and-cat{
+        position: absolute;
+        top:0px;
+        left: 20px;
+    }
+
+    .text-about{
+        left: 500px;
+        position: absolute;
+        right: 20px;
+        top:0px;
+        color: #4C4C4C;
+    }
+}
+
+
+
+@media only screen and (min-width: 1280px) {
+    .main-section-main-page{
+        width: 100%;
+        max-width: 1280px;
+        top: 0px;
+    }
+
+    
+.about-block-inner{
+    width: 1200px;
+    height: 408px;
+    left: calc(50% - 1200px/2);
+    top: calc(50% - 408px/2 - 10px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 175px;
+    gap: 120px;
+
+}
+
+.dog-and-cat{
+    width: 300px;
+    height: 408px;
+    left: 232px;
+
+}
+
+.text-about{
+    position: absolute;
+    width: 380px;
+    height: 430px;
+    top: 14px;
+    left: 652.5px;
+
+
+/* color-dark-xl */
+    color: #4C4C4C;
+
+}
+.cozy-header{
+    position: absolute;
+    width: 370px;
+    height: 90px;
+    left: 0px;
+    top: 0px;
+    letter-spacing: 0.06em;
+
+}
+
+
+
+.cozy-paragraph1{
+    position: absolute;
+    width: 430px;
+    height: 96px;
+    left: 0px;
+    top: 115px;
+}
+.cozy-paragraph2{
+    position: absolute;
+    width: 430px;
+    height: 144px;
+    left: 0px;
+    top: 237px;
+
+}
+}
