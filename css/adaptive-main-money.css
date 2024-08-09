@@ -1,5 +1,8 @@
 @media only screen and (min-width: 320px) {
 
+
+        /*Deltet later*/
+ 
     .in-addition{
         position: absolute;
         height: 542px;
@@ -47,7 +50,7 @@
         height: 64px;
         max-width: 300px;
         max-height: 64px;
-        left: 0px;
+        left: 48px;
         top: 0px;
 
     }
@@ -84,6 +87,7 @@
 
         display: flex;
         align-items: center;
+        letter-spacing: 0.01px;
     }
 
     .credit-cart-block{
@@ -98,6 +102,15 @@
     }
 
     .credit-card-content{
+        
+        width: 251px;
+        height: 23px;
+        max-width: 251px;
+        max-height: 23px;
+
+        
+    }
+    .credit-card-content-number{
         position: absolute;
         width: 206px;
         height: 17px;
@@ -105,18 +118,15 @@
         max-height: 17px;
         left: 60px;
         top: 13px;
-        
-
-        
     }
 
-    .credit-card-content-number{
-        /* h5 */
+    .credit-card-content-number h4{
         font-family: 'Georgia';
         font-style: normal;
         font-weight: 400;
         font-size: 15px;
-        line-height:17px ;
+        line-height: 17px;
+        letter-spacing: 0.06em;
     }
 
     .credit-card-content-image{
@@ -141,7 +151,259 @@
 
     }
     .puppy-in-addition img{
-        width: 260px;
+        width: 260.5px;
     }
 
+
+    .legal-info-payment-block{
+        position: absolute;
+        width: 280px;
+        height: 90px;
+        max-width: 280px;
+        max-height: 90px;
+        left: calc(50% - 280px/2);
+        top: 191px;
+    }
+
+    .legal-info-payment{
+        font-family: 'Arial';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        text-align: justify;
+    }
+
+}
+
+
+@media only screen and (min-width: 470px) {
+
+    .in-addition{
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .in-addition-inner-block{
+        width: 320px;
+        max-width: 320px;
+        display: flex;
+        justify-content: center;
+         left: calc(50% - 320px / 2); 
+        /* left: 390px; */
+    }
+    .puppy-in-addition img{
+        width: 340px;
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+
+    .in-addition{
+        position: absolute;
+        max-width: 100%;
+        width: 100%;
+        height: 783px;
+        max-height: 783px;
+        left: 0%;
+        right: 0%;
+        top: 2704px;
+    }
+
+   .in-addition-inner-block{
+        position: absolute;
+        max-width: 100%;
+        width: 100%;
+        height: 783px;
+        max-height: 783px;
+        left: 0%;
+        right: 0%;
+        top: 0px;
+   } 
+
+   .puppy-in-addition{
+        position: absolute;
+        width: 505px;
+        height: 261px;
+        max-width: 505px;
+        max-height: 261px;
+        left: 131px;
+        top: 422px;
+    
+   }
+
+   .donation-info{
+    position: absolute;
+    width: 380px;
+    height: 282px;
+    max-width: 380px;
+    max-height: 282px;
+    left: 194px;
+    top: 80px;
+
+   }
+   .puppy-in-addition{
+        position: absolute;
+        width: 505px;
+        height: 261px;
+        max-width: 505px;
+        max-height: 261px;
+        left: 131px;
+        top: 422px;
+
+   }
+   .puppy-in-addition img{
+        width: 505px;
+   }
+
+   .donation-info-heading{
+    position: absolute;
+    width: 300px;
+    height: 90px;
+    max-width: 300px;
+    max-height: 90px;
+    left: 0px;
+    top: 0px;
+   }
+   .donation-info-heading h3{
+        /* h3 */
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    text-align: left;
+
+   }
+
+   .subheading-donation{
+    
+        position: absolute;
+        width: 307px;
+        height: 17px;
+        max-width: 307px;
+        max-height: 17px;
+        left: 0px;
+        top: 110px;
+
+   }
+
+   .subheading-donation p{
+        /* h5 */
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    /* identical to box height, or 17px */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+
+ 
+   }
+
+   .credit-cart-block{
+    position: absolute;
+    width: 349px;
+    height: 43px;
+    max-width: 349px;
+    max-height: 43px;
+    left: 0px;
+    top: 147px;
+
+   }
+   .credit-card-content-image{
+    top: 13px;
+}
+
+   .credit-card-content{
+        width: 319px;
+        height: 23px;
+        max-width: 319px;
+        max-height: 23px;
+        top:-4px;
+
+   }
+
+   .credit-card-content-number h4{
+            /* h4 */
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 115%;
+        /* identical to box height, or 23px */
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.06em;
+
+
+   }
+
+
+   .legal-info-payment-block{
+        position: absolute;
+        width: 380px;
+        height: 72px;
+        max-width: 380px;
+        max-height: 72px;
+        left: 0px;
+        top: 210px;
+   }
+
+   .legal-info-payment {
+     font-family: 'Arial';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        /* or 150% */
+        display: flex;
+        align-items: center;
+        text-align: left;
+ 
+       
+   }
+}
+
+
+@media only screen and (min-width: 1000px) {
+    .main-section-main-page{
+        
+        position: absolute;
+        width: 100%;
+        max-width: 100%;
+        top: 1165px;
+        left: 0px;
+        /*must change in future*/
+        height: 2538px;
+        max-height: 2538px;
+        
+    } 
+
+  
+
+    .in-addition{
+        position: absolute;
+        max-width: 100%;
+        width: 100%;
+        top:2076px;
+    }
+
+    @media only screen and (min-width: 1150px) {
+
+        .main-section-main-page{
+            top: 908px;
+        }
+    }
 }
