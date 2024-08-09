@@ -513,7 +513,7 @@ white-space: nowrap;
     display: flex;
     justify-content:space-between;
     flex-wrap: wrap;
-     gap: 55px 120px; 
+    gap: 55px 120px; 
 
 }
 
@@ -590,8 +590,6 @@ top: 0px;
     height: 60px;
     top: 0px;
 
-
-
 }
 
 .help-image-name{
@@ -604,22 +602,22 @@ top: 0px;
 
 
     
-/* h4 */
-font-family: 'Georgia';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 115%;
-/* identical to box height, or 23px */
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.06em;
+        /* h4 */
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 115%;
+        /* identical to box height, or 23px */
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
 
-/* color-dark-l */
-color: #545454;
+        /* color-dark-l */
+        color: #545454;
 
-white-space: nowrap;
+        white-space: nowrap;
 }
 
 
