@@ -1,0 +1,561 @@
+/* 320 */
+@media only screen and (min-width: 320px) {
+
+    .start-screen{
+        max-width: 320px;
+        min-width: 320px;
+        max-height: 823px;
+
+       
+    }
+    .start-screen-wrapper{
+        height: 823px;
+    }
+
+    .main-header{
+        max-width:280px;
+        width: 93.75%;
+        height: 60px;
+        top:30px;
+        left:20px;
+    }
+
+
+
+    .puppy{
+    
+        max-width: 260px; 
+        height: auto;
+        top: 548px;
+        right: 15px;
+    }
+
+
+    .puppy-image{
+        max-width: 260px; 
+        
+    
+    }
+
+    .navigation{
+        display: none;
+    }
+
+    /**/
+
+    .not-only{
+        max-width:300px;
+        min-height:296px;
+        top: 150px;
+        left: 11.79px;
+       
+    
+    }
+
+
+    h2{
+        max-width: 300px;
+        max-height: 64px;
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 32px;
+        letter-spacing: 1.4px;
+        text-align:center;
+        }
+
+
+    .paragraph-1{
+        max-width:300px;
+        max-height:96px;
+        left: 4.35px;
+        top: 106px;
+        text-align: center;
+        /* letter-spacing: 0.2px; */
+
+    }    
+
+    .button-main{
+        top: 245px;
+        left: 45px;
+        }
+
+
+    .toggle-button{
+        display: flex;
+        background-color: blueviolet;
+        top:1.2rem;
+      
+        right: 2.30px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content:pace-between;
+        width: 30px;
+        height: 21px;
+
+      }
+      .toggle-button .bar{
+
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+      }
+
+      /**/
+}
+
+
+@media only screen and (min-width: 450px) {
+
+    .start-screen{
+        max-width: 100vw;
+        max-height: 1165px;
+    }
+    .start-screen-wrapper{
+        height: 1165px;
+    }
+
+    /* Start Screen */
+    h2{
+
+
+        max-width: 310px;
+        max-height: 114px;
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 44px;
+        line-height: 57px;
+        letter-spacing: 0px;
+        text-align:left;
+        
+
+    }
+
+    .main-header{
+        max-width:90vw;
+        width: 90%;
+        height: 60px;
+        top:30px;
+        left: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+
+    .button-main{
+        top: 320px;
+        left: 15px;
+        }
+
+
+        .paragraph-1{
+            max-width:300px;
+            max-height:96px;
+            left: 2.5px;
+            top: 156px;
+            text-align: left;
+            /* letter-spacing: 0.2px; */
+        }
+        .not-only{
+            max-width:460px;
+            min-height:322px;
+            top: 280px;
+            left: 20px;
+        }
+
+        .puppy{
+        
+            max-width: 350px; 
+            height: auto;
+            top: 800px;
+            right: 24px;
+        }
+
+        .puppy-image{
+            
+            max-width: 350px; 
+        
+
+        }
+
+
+
+
+}
+
+
+/* 768*/
+@media only screen and (min-width: 768px) {
+    .navigation{
+        display:block;
+    }
+
+    .navigation{
+        position: absolute;
+        width: 443px;
+        height: 27px;
+        left: 263px;
+        top: 16px;
+    
+    } 
+    .toggle-button{
+        display: none;
+    }
+    .puppy{
+    
+        max-width: 569px; 
+        height: auto;
+        top: 572px;
+        right: 24px;
+    }
+
+    .puppy-image{
+        
+        max-width: 569px; 
+    
+
+    }
+
+
+    .not-only{
+        max-width:460px;
+        min-height:322px;
+        left: -127px;
+        top: 3px;
+    }
+
+    .button-main{
+        left: 130px;
+        top:268px;
+    }
+
+
+    .start-screen{
+        max-height: 1165px;
+    }
+    .start-screen-wrapper{
+        height: 1165px;
+    }
+
+    .site-info{
+        position: absolute;
+        max-width: 569px;
+        height: 1015px;
+        top: 150px;
+        bottom: 0px;
+        /* left: calc((768px - 569px) / 2); */
+        left: 280px;
+      
+    }
+  
+    .main-header{
+        max-width:708px;
+        width: 93.75%;
+        height: 60px;
+        top:30px;
+        left:30px;
+    }
+    
+    .paragraph-1{
+        max-width: 460px;
+        max-height: 72px;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 770px) {
+
+
+    .navigation{
+        position: absolute;
+        width: 390px;
+        height: 27px;
+        left: 290px;
+        top: 16px;
+    
+    } 
+
+    .site-info{
+        position: absolute;
+        max-width: 569px;
+        height: 1015px;
+        top: 150px;
+        bottom: 0px;
+        /* left: calc((768px - 569px) / 2); */
+        left: 145px;
+      
+    }
+ 
+
+
+    .puppy{
+    
+        max-width: 509px; 
+        height: auto;
+        top: 632px;
+        right: 24px;
+    }
+
+    .puppy-image{
+        
+        max-width: 509px; 
+    
+
+    }
+
+}
+
+
+@media only screen and (min-width: 930px) {
+
+    .main-header{
+        max-width:100vw;
+        width: 93.75%;
+        max-height: 60px;
+        top:30px;
+        left:30px;
+    }
+
+    
+    .navigation{
+    
+        max-width: 100%;
+        max-height: 27px;
+        width: 60%;
+        right: 0px;
+        top: 16px;
+    
+    } 
+
+
+    .site-info{
+        position: absolute;
+        max-width: 569px;
+        height: 1015px;
+        top: 150px;
+        bottom: 0px;
+        /* left: calc((768px - 569px) / 2); */
+        left: 200px;
+      
+    }
+
+
+}
+
+
+@media only screen and (min-width: 1019px) {
+
+    .start-screen{
+        max-height: 1165px;
+    }
+    
+    .start-screen-wrapper{
+        max-height: 1165px;
+    }
+
+    .site-info{
+        position: absolute;
+        max-width: 800px;
+        max-height: 1015px;
+        top: 150px;
+        bottom: 0px;
+        left: calc((960px - 569px) / 2);
+    
+    }
+  
+    .not-only{
+
+        left: 55px;
+        top: 0px;
+        
+        
+    }
+
+
+    .puppy{
+      
+        max-width: 587px; 
+        right: 0px;
+        top: 553px;
+        
+    }
+    .puppy-image{
+
+        max-width: 587px; 
+    
+    }
+
+
+    .main-header{
+        max-width: 1200px;
+        width: 93.75%;
+        height: 60px;
+        top:30px;
+        left:39px;
+    }
+        
+    
+
+
+}
+
+
+
+@media only screen and (min-width: 1020px) {
+    .puppy{
+        max-width: 600px; 
+        right: 0px;
+        top: 281px;
+    }
+
+    .puppy-image{
+        max-width: 600px; 
+   ;
+    }
+
+
+
+    .not-only{
+        left: 0px;
+        top: 163px;
+    
+    }
+
+    .paragraph-1{
+        max-width: 350px;}
+
+
+        
+    .site-info{
+            max-width: 1000px;
+            height: 728px;
+            left: 40px;
+            top: 180px; 
+        }    
+
+     
+    .start-screen-wrapper{
+            height: 908px;
+        }
+    .button-main{
+            left: 0px;
+        }
+
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .main-header{
+        max-width: 1200px;
+            width: 93.75%;
+            height: 60px;
+            top:30px;
+            left:39px;
+        }    
+
+         .navigation{
+            position: absolute;
+            width: 443px;
+            height: 27px;
+            left: 650px;
+            top: 16px;
+
+        }  
+
+    .puppy{
+       
+        top: 232px; 
+        right: 5px;
+        max-width: 645px; 
+    }
+
+    .puppy-image{
+
+        max-width: 645px; 
+
+    }
+
+
+    .start-screen-wrapper{
+        max-height: 908px;
+
+    }
+
+
+    .paragraph-1{
+        max-width: 350px;}
+
+    .button-main{
+            left: 0px;
+        }    
+
+    .site-info{
+            max-width: 1100px;
+            height: 728px;
+            left: 40px;
+            top: 180px; 
+        }        
+}
+
+
+@media only screen and (min-width: 1280px) {
+    .start-screen{
+        max-width: 1280px;
+        width: 100%;
+        max-height: 908px;
+        height: 908px;
+        top: 0;
+        left: 0;
+    }
+
+    .start-screen-wrapper{
+        height: 908px;
+    }
+
+    .puppy{
+        left: calc(50% - 698px/2 + 251px);
+        top: 180px;
+        max-width: 698px; 
+    }
+
+    .puppy-image{
+        top: 0;
+        max-width: 698px; 
+
+    }
+    .paragraph-1{
+        max-width: 460px;}
+
+    .button-main{
+            left: 0px;
+        }
+
+    .main-header{
+        max-width: 1200px;
+            width: 93.75%;
+            height: 60px;
+            top:30px;
+            left:39px;
+        }    
+
+        .navigation{
+            position: absolute;
+            width: 443px;
+            height: 27px;
+            left: 758px;
+            top: 16px;
+
+        }      
+
+
+}
+
+

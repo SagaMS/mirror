@@ -55,19 +55,21 @@ white-space: nowrap;
 
 }
 
-
-
-
-
 .navigation{
     position: absolute;
-    width: 443px;
+    /* width: 443px;
     height: 27px;
-    /* left: 757px; */
-    left: 757px;
-    top: 16px;
+    right: 0px;
+    top: 16px; */
 
 } 
+
+
+
+
+
+
+
 .navigation li{
     display: inline-block;
 

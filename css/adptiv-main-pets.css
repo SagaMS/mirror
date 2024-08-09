@@ -1,0 +1,408 @@
+@media only screen and (min-width: 320px) {
+    .our-friends{
+
+        position: absolute;
+        max-width: 320px;
+        max-height: 791px;
+        width: 320px;
+        height: 791px;
+        left: 0;
+        right: 0;
+        top: 974px;
+    }
+
+    .hidden-now320{
+        display: none;
+    }
+
+    .our-friends-inner-block{
+
+        position: absolute;
+        max-width: 300px;
+        max-height: 707px;
+        width: 300px;
+        height: 707px;
+        left: calc(50% - 300px/2);
+        top: 42px;
+        
+    }
+
+    .animal-heading-block{
+        position: absolute;
+        max-width: 300px;
+        max-height: 64px;
+        width: 300px;
+        height: 64px;
+        left: 0px;
+        top: 0px;
+
+        font-size: 25px;
+        line-height:  32px;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+    }
+
+
+    .animal-heading{
+        font-size: 25px;
+        line-height:  32px;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+    }
+    .animals{
+        position: absolute;
+        max-width: 270px;
+        max-height: 507px;
+        left: 15px;
+        width: 270px;
+        height: 507px;
+        left: 48px;
+        top: 106px;
+
+
+    }
+
+
+    .animal-block-footer-link{
+        position: absolute;
+        width: 260px;
+        height: 52px;
+        max-width: 260px;
+        max-height: 52px;
+        left: 20px;
+        top: 655px;
+    }
+
+    .arrow-left{
+        position: absolute;
+        width: 52px;
+        height: 52px;
+        max-width: 52px;
+        max-height: 52px;
+        left: 12px;
+        top: 455px;
+    }
+
+    .arrow-right{
+        
+        position: absolute;
+        width: 52px;
+        height: 52px;
+        max-width: 52px;
+        max-height: 52px;
+        left: 140px;
+        top: 455px;
+    }
+
+
+    .pet{
+        position: absolute;
+        width: 270px;
+        height: 435px;
+        max-width: 270px;
+        max-height: 435px;
+        left: 0px;
+        top: 0px;
+    }
+
+    .animal-name{
+        position: absolute;
+        width: 74px;
+        height: 23px;
+        max-width: 74px;
+        max-height: 23px;
+        left: 98px;
+        top: 300px;
+        
+    }
+
+    .learn-more{
+        position: absolute;
+        width: 187px;
+        height: 52px;
+        max-width: 187px;
+        max-height: 52px;
+        left: 41.5px;
+        top: 353px;
+        
+    }
+
+}
+
+
+@media only screen and (min-width: 470px) {
+
+    .our-friends{
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+    }
+
+    .our-friends-inner-block{
+        margin: auto;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    .main-section-main-page{
+        position: absolute;
+        top:1165px;
+        left: 0px;
+        height: 3487px;
+        max-height: 3487px;
+    }
+
+    .hidden-now320{
+       
+        display: block;
+    }
+
+    .hidden-now768{
+        display: none;
+    }
+
+    .our-friends{
+        position: absolute;
+        max-width: 100%;
+        width: 100%;
+        top:1048px;
+        height: 877px;
+        max-height: 877px;
+    }
+
+    .our-friends-inner-block{
+      position: absolute; 
+        width:708px;
+        height: 697px;
+        max-width:708px;
+        max-height: 697px;
+        left: calc(50% - 708px/2);
+        top: 80px;
+
+    }
+
+    .animal-heading-block{
+        width: 400px;
+        height: 90px;
+        max-width: 400px;
+        max-height: 90px;
+        left: 154px;
+        top: 0px;
+
+    }
+    .animal-heading{
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 45px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+    }
+
+    .animals{
+        position: absolute;
+        width: 708px;
+        height: 435px;
+        max-width: 708px;
+        max-height: 435px;
+        left: 0px;
+        top: 150px;
+        display: flex;
+        justify-content: space-between;
+       
+
+    }
+    
+    .arrow{
+        top: 192px;
+        position: absolute;
+  
+    }
+
+
+    .pet{
+        position: absolute;
+        width: 270px;
+        height: 435px;
+        max-width: 270px;
+        max-height: 435px;
+        top: 0px;
+    
+    }
+  
+    .katrine{
+        left: 98px;
+    }
+
+     .jennifer{
+        left: 374px;
+    }
+
+    .arrow-left{
+        left: 2px;
+    }
+
+    .arrow-right{
+        left: 653px;
+    }
+
+    .animal-block-footer-link{
+        top: 645px;
+        left: 225px;
+    }
+}
+
+
+
+@media only screen and (min-width: 1000px) {
+
+    
+    .main-section-main-page{
+        
+        position: absolute;
+        width: 100%;
+        max-width: 100%;
+        top: 1165px;
+        left: 0px;
+
+        /*must change in future*/
+        height: 2538px;
+        max-height: 2538px;
+        
+    } 
+
+    .our-friends{
+        position: absolute;
+        max-width: 100%;
+        width: 100%;
+        top:588px;
+    }
+
+}
+
+
+@media only screen and (min-width: 1020px) {
+    .main-section-main-page{
+       
+       position: absolute;
+       width: 100%;
+       max-width: 100%;
+       top: 908px;
+       left: 0px;
+       /*must change in future*/
+       height: 2538px;
+       max-height: 2538px;
+       
+   } 
+
+}
+
+
+@media only screen and (min-width: 1280px) {
+
+    .main-section-main-page{
+        
+        position: absolute;
+        width: 100%;
+        max-width: 100%;
+        top: 908px;
+        left: 0px;
+        /*must change in future*/
+        height: 2538px;
+        max-height: 2538px;
+     
+        
+    } 
+
+    .our-friends{
+        position: absolute;
+        width: 100%;
+        max-width: 100%;
+        max-height: 877px;
+        height: 877px;
+        left: 0px;
+        top: 588px;
+
+
+    }
+
+    .hidden-now768{
+        display: block;
+    }
+
+    .our-friends-inner-block{
+        position: absolute;
+        width: 1200px;
+        height: 697px;
+        left: calc(50% - 1200px/2);
+        top: 80px;
+}
+
+
+/*QUESTINABLE*/
+
+        .animal-heading-block{
+            position: absolute;
+            width: 400px;
+            height: 90px;
+            left: 400px;
+            top: 0px;
+
+        }
+
+        .animalS{
+            position: absolute;
+            width: 1200px;
+            height: 435px;
+            left: 0px;
+            top: 150px;
+
+
+        }
+
+        .animal-block-footer-link{
+            position: absolute;
+            width: 261px;
+            height: 52px;
+            left: 470px;
+            top: 645px;
+        }
+
+        .katrine{
+            position: absolute;
+            left: 140px;
+            top: 0%;
+            bottom: 0%;
+        }
+
+        .jennifer{
+            position: absolute;
+            left: 463px;
+            top: 0%;
+            bottom: 0%;
+        }
+
+
+        .woody{
+            position: absolute;
+            left: 828.5px;
+            top: 0%;
+            bottom: 0%;
+
+        }
+
+        .arrow-left{
+            left: 2px;
+        }
+    
+        .arrow-right{
+            left: 1149px;
+        }
+}
