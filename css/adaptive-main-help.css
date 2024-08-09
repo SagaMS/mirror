@@ -1,0 +1,466 @@
+@media only screen and (min-width: 320px) {
+    .help{
+
+        position: absolute;
+        max-width: 320px;
+        max-height: 745px;
+        width: 320px;
+        height: 745px;
+        left: 0;
+        right: 0;
+        top: 1765px;
+    }
+
+
+
+    .help-block{
+        position: absolute;
+        max-width: 320px;
+        max-height: 745px;
+        width: 320px;
+        height: 745px;
+        left: 0;
+        right: 0;
+        top: 0px;
+    }
+
+    .help-block-header{
+        position: absolute;
+        width: 220px;
+        height: 64px;
+        left: 50px;
+        top: 42px;
+
+    }
+
+    .help-block-header h3{
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 130%;
+        /* or 32px */
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+    }
+    .icon-help-block{
+        position: absolute;
+        width: 290px;
+        height: 555px;
+        left: 15px;
+        top: 148px;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        flex-wrap: wrap;
+        gap: 30px 30px; 
+    
+    
+    }    
+
+    .icon-help {
+
+        width: 130px;
+        height: 87px;
+        max-width: 130px;
+        max-height: 87px;
+
+    }
+    .help-image{
+        width: 50px;
+        height: 50px;
+        max-width: 50px;
+        max-height: 50px;
+      
+    }
+
+    .help-image-name{
+        position: absolute;
+        display: inline-block;
+        text-align: center;
+        width: 130px;
+        height: 17px;
+        max-width: 130px;
+        max-height: 17px;
+        top: 70px;
+     
+        letter-spacing: 0.06em;
+     
+    }
+ 
+    .help-image-name{
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 17px;
+
+    }
+
+    .dummy{ 
+        visibility: hidden; 
+    } 
+}
+
+
+
+
+@media only screen and (min-width: 470px){
+    .help{
+        max-width: 100%;
+        width: 100%;
+    }
+    .help-block{
+        max-width: 100%;
+        width: 100%;
+    }
+    .help-block-header{
+            width: 85%;
+            max-width: 85%;
+            display: flex;
+            justify-content: center;
+         
+        }
+
+
+    .icon-help-block{
+        width: 85%;
+        max-width: 85%;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    .main-section-main-page{
+        position: absolute;
+        top:1165px;
+        left: 0px;
+        height: 3487px;
+        max-height: 3487px;
+    }
+
+    .help{
+        position: absolute;
+        max-width: 100%;
+        width: 100%;
+        top:1925px;
+        max-height: 779px;
+        height: 779px;
+  
+    }
+
+
+    .help-block{
+        position: absolute;
+        width: 630px;
+        height: 599px;
+        max-width: 630px;
+        max-height: 599px;
+        /* max-width: 95%;
+        max-height: 95%; */
+        /* left: 73px; */
+        left: calc((100% - 630px) / 2);
+        top: 80px;
+
+    }
+
+    .help-block-header{
+        position: absolute;
+        width: 308px;
+        height: 90px;
+        left: 161px;
+        top: 0px;
+
+  
+        display: flex;
+        align-items: center;
+        text-align: center;
+  
+        
+
+
+    }
+    .help-block-header h3{
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 45px;
+        letter-spacing: 0.06em;
+    }
+
+
+    .icon-help-block{
+        position: absolute;
+        width: 630px;
+        height: 449px;
+        max-width: 630px;
+        max-height: 449px;
+        /* max-width: 100%;
+        max-height: 100%; */
+        left: 0px;
+        top: 150px;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        flex-wrap: wrap;
+        /* между строками /  между колонками*/
+        gap: 55px 10px; 
+    }
+
+
+    .icon-help{
+        width: 170px;
+        height: 113px;
+        max-width: 170px;
+        max-height: 113px;
+
+        
+        
+    }
+
+    .help-image{
+        position: absolute;
+        left: 55px;
+        top: 0px;
+        width: 60px;
+        height: 60px;
+        max-width: 60px;
+        max-height: 60px;
+    }
+
+    .help-image-name{
+
+        position: absolute;
+        display: inline-block;
+        text-align: center;
+
+        width: 170px;
+        height: 23px;
+        max-width: 170px;
+        max-height: 23px;
+    
+        top: 90px;
+        
+        /* h4 */
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height:  23px;
+    }
+/* 
+    .dummy{
+        float: right;
+        width: 0px;
+        height: 0px;
+        max-width: 0px;
+        max-height: 0px;
+    } */
+}
+
+
+@media only screen and (min-width: 1000px) {
+
+    
+    .main-section-main-page{
+        
+        position: absolute;
+        width: 100%;
+        max-width: 100%;
+        top: 1165px;
+        left: 0px;
+
+        /*must change in future*/
+        height: 2538px;
+        max-height: 2538px;
+        
+    } 
+
+    .help{
+        position: absolute;
+        max-width: 100%;
+        width: 100%;
+        top:1465px;
+    }
+
+}
+
+@media only screen and (min-width: 1150px) {
+
+    .main-section-main-page{
+        top: 908px;
+    }
+
+
+
+
+    .help-block-header{
+        left: calc(100% - 65%);
+    }
+
+  .help-block{
+        left:150px;
+        position: absolute;
+        width: 850px;
+        height: 599px;
+        max-width: 850px;
+        max-height: 599px;
+    }  
+   .icon-help-block{
+        position: absolute;
+        left: 0px;
+        width: 850px;
+        height: 449px;
+        max-width: 850px;
+        max-height: 449px;
+    }  
+}
+
+
+@media only screen and (min-width: 1280px){
+
+    .main-section-main-page{
+        
+        position: absolute;
+        width: 100%;
+        max-width: 100%;
+        top: 908px;
+        left: 0px;
+        /*must change in future*/
+        height: 2538px;
+        max-height: 2538px;
+     
+        
+    } 
+
+    .help{
+        position: absolute;
+        height: 611px;
+        left: 0;
+        right: 0;
+        top: 1465px;
+
+    }
+
+    .help-block{
+        position: absolute;
+        width: 1200px;
+        height: 431px;
+        max-width: 1200px;
+        max-height: 431px;
+        left: calc(50% - 1200px/2);
+        top: 80px;
+    }
+
+    .help-block-header{
+        position: absolute;
+        width: 308px;
+        height: 90px;
+        max-width: 308px;
+        max-height: 90px;
+        left: 446px;
+        top: 0px;
+
+  
+        display: flex;
+        align-items: center;
+        text-align: center;
+   
+
+    }
+
+    .help-block-header h3{
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 45px;
+        letter-spacing: 0.06em;
+    }
+    .icon-help-block{
+        position: absolute;
+        width: 1026px;
+        height: 281px;
+        max-width: 1026px;
+        max-height: 281px;
+        left: 87px;
+        top: 150px;
+        /* justify-content:space-between;
+        flex-wrap: wrap; */
+        gap: 55px 120px; 
+
+
+
+    }
+
+    .icon-help{
+        height: 113px;
+        max-height: 113px;
+        text-align: center;
+      
+    }
+
+    .help-image{
+        height: 60px;
+        top: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+     
+    }
+   
+
+
+    .food{
+        width: 82px;
+    }
+
+
+
+    .transport{
+        width: 150px;
+    }
+
+
+
+    .toys{
+        width: 60px;
+    }
+
+
+    .bowls{
+        width: 153px;
+    }
+    .shampoon{
+        width: 101px;
+    }
+    .vitamins{
+        width:89px; 
+        margin-left:85px;
+    }
+
+
+
+    .medicines{
+        width:101px; 
+    }
+    .collars{
+        width: 165px;
+    }
+    .sleep{
+        width: 143px;
+        margin-right:82px;
+    }
+
+    
+    .help-image{
+        height: 60px;
+        top: 0px;
+     
+    }
+
+
+}
