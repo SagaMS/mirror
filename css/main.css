@@ -285,8 +285,8 @@ width: 1200px;
 height: 435px;
 left: 0px;
 top: 150px;
-display: flex;
-justify-content:space-between;
+/* display: flex;
+justify-content:space-between; */
 }
 
 .pet{
@@ -554,7 +554,7 @@ top: 0px;
     height: 113px;
     text-align: center;
 }
-
+/* 
 .food{
     width: 82px;
 }
@@ -583,7 +583,7 @@ top: 0px;
 .sleep{
     width: 143px;
     margin-right:82px;
-}
+} */
 
 
 .help-image{
