@@ -4,24 +4,67 @@
 
 
     .start-screen{
-        max-width: 320px;
-        min-width: 320px;
+
+        max-width: 100%;
+        min-width: 100%;
         max-height: 823px;
+        height: 823px;
 
        
     }
     .start-screen-wrapper{
         height: 823px;
+        max-height: 823px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .main-header-main{
+        position: absolute;
+        max-width: 100%;
+        width:100%;
+        max-height: 60px;
+        height: 60px;
+        position: absolute;
+        left: 0px;
+        top: 30px;
+   
+        
     }
 
     .main-header{
-        max-width:280px;
-        width: 93.75%;
-        height: 60px;
-        top:30px;
-        left:20px;
+        position: absolute;
+        max-width: 100%;
+        max-height: 60px;
+        width: 100%;
+        max-height: 60px;
+        left: 0px;
+        top: 0px;
+  
+        
     }
 
+    .logo{
+
+        width: 184px;
+        max-width: 184px;
+        max-height: 60px;
+        height: 60px;
+        top: 0px;
+        left: 18px;
+     }
+
+
+    .site-info{
+        position: absolute;
+        width: 300px;
+        height: 673px;
+        max-width: 300px;
+        max-height: 673px;
+        left: 10px;
+        top: 150px;
+
+    }
 
 
     .puppy{
@@ -39,17 +82,17 @@
     
     }
 
-    .navigation{
-        display: none;
-    }
 
     /**/
 
     .not-only{
-        max-width:300px;
-        min-height:296px;
-        top: 150px;
-        left: 11.79px;
+        position: absolute;
+        width: 300px;
+        height: 296px;
+        max-width: 300px;
+        max-height: 296px;
+        left: 0px;
+        top: 0px;
        
     
     }
@@ -71,16 +114,13 @@
     .paragraph-1{
         max-width:300px;
         max-height:96px;
-        left: 4.35px;
+        left: 0px;
         top: 106px;
         text-align: center;
         /* letter-spacing: 0.2px; */
-
-    }    
-    .paragraph-1{
         color: #CDCDCD;
-     
-     }
+    }    
+ 
 
         
     .button-main{
@@ -89,40 +129,171 @@
         }
 
 
-    .toggle-button{
-        display: flex;
-        top:1.2rem;
-        right: 2.30px;
-        flex-direction: column;
-        justify-content: space-between;
-        align-content:pace-between;
-        width: 30px;
-        height: 21px;
 
-      }
-
-
-      .bar1, .bar2, .bar3{
-        position: absolute;
-        width: 30px;
-        height: 0px;
-        left: 0px;
-        border: 2px solid #F1CDB3;
-
-     }
-
-     .bar1{
-        top: 2px;
-     }
-     .bar2{
-        top: 12px;
-     }
-     .bar3{
-        top: 22px;
-     }
+    
+      
  
+         .nav-links{
+            display: none;
+        } 
 
-      /**/
+
+        
+
+                /* INACTIVE*/
+
+                .navigation.inactive .toggle-button{
+                position: absolute; 
+                display: block;
+                width: 30px;
+                height: 22px;
+                max-width: 30px;
+                max-height: 22px;
+                top: 0px;
+            
+          
+             
+                
+                }
+                .navigation.inactive {
+                    display: block;
+                    width: 30px;
+                    height: 22px;
+                    max-width: 30px;
+                    max-height: 22px;
+                    right: 6.25%;
+                    top: 15px;
+                }
+
+
+                .navigation.inactive .toggle-button .toggle-button-line .bar1,
+                .navigation.inactive .toggle-button .toggle-button-line .bar2,
+                .navigation.inactive .toggle-button .toggle-button-line .bar3{ 
+
+                position: absolute;
+                width: 30px;
+                height: 0px;
+                left: 0px;
+
+                border: 2px solid #F1CDB3;
+                }
+
+                .navigation.inactive .toggle-button .toggle-button-line .bar1{
+                top:2px;
+                }
+                .navigation.inactive .toggle-button .toggle-button-line .bar2{
+                top: 12px;
+                }
+                .navigation.inactive .toggle-button .toggle-button-line .bar3{
+                top: 22px;
+                }
+
+
+                /* ACTIVE*/
+                .navigation.active .nav-links .main-link.about-link::after{
+                width: 245px;
+                }
+
+
+
+                .navigation.active .toggle-button{
+                position: absolute;
+                width: 30px;
+                height: 22px;
+                max-width: 30px;
+                max-height: 22px;
+                left: 273px;
+                top: 45px;
+
+                z-index: 100;
+
+                }
+
+                .navigation.active{
+                /* mobile-menu-320 */
+                    z-index:100;
+                    position: absolute;
+                    width: 320px;
+                    height: 823px;
+                    max-width: 320px;
+                    max-height: 823px;
+                    top:-30px;
+                    right: -20px;
+                    background: #292929;  
+                 
+              
+                }
+
+                .navigation.active .nav-links{
+                z-index:100;
+                display: block;
+                position: absolute;
+                width: 243px;
+                height: 327px;
+                max-width: 243px;
+                max-height: 327px;
+                left: 39px;
+                top: 248px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                text-align: center;
+                }
+
+                .navigation.active .nav-links .main-link{
+                font-family: 'Arial';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 32px;
+                line-height:  51px;
+                /* or 51px */
+
+                /* color-light-s */
+                color: #FAFAFA;
+
+                }
+
+
+                .navigation.active .toggle-button .toggle-button-line{
+                display: block;
+                width: 30px;
+                max-width: 30px;
+                height: 30px;
+                max-height: 30px;
+                }
+                .navigation.active .toggle-button .toggle-button-line .bar1,
+                .navigation.active .toggle-button .toggle-button-line .bar2,
+                .navigation.active .toggle-button .toggle-button-line .bar3
+                {
+
+                border: 1px solid #F1CDB3;
+                height: 30px;
+                max-height: 30px;
+
+
+                }
+
+                .navigation.active .toggle-button .toggle-button-line .bar1{
+                position: absolute;
+                left:0px;
+
+
+                }
+                .navigation.active .toggle-button .toggle-button-line .bar2{
+                position: absolute;
+                left:10px;
+
+
+                }
+                .navigation.active .toggle-button .toggle-button-line .bar3{
+                position: absolute;
+                left:20px;
+
+                }
+
+
+
+
 }
 
 
@@ -130,10 +301,13 @@
 
     .start-screen{
         max-width: 100%;
+        width: 100%;
         max-height: 1165px;
         height: 1165px;
     }
     .start-screen-wrapper{
+        max-width: 100%;
+        width: 100%;
         height: 1165px;
         max-height: 1165px;
     }
@@ -155,17 +329,34 @@
 
     }
 
-    .main-header{
-        max-width:90vw;
-        width: 90%;
+    .main-header-main{
+        position: absolute;
+        max-width:100%;
+        width: 100%;
         height: 60px;
+        max-height: 60px;
         top:30px;
         left: 10px;
         display: flex;
         justify-content: space-between;
     }
 
+    .main-header{
+        position: absolute;
+        max-width: 87.5% ;
+        width: 87.5%;
+        height: 60px;
+        height: 60px;
+        top:0px;
+        left: 0px;
+    
+    
+    }
 
+    /* .navigation.inactive .toggle-button{
+
+        left: -26px;}
+     */
 
     .button-main{
         top: 320px;
@@ -177,14 +368,14 @@
             max-width:300px;
             max-height:96px;
             left: 2.5px;
-            top: 156px;
+            top: 186px;
             text-align: left;
             /* letter-spacing: 0.2px; */
         }
         .not-only{
             max-width:460px;
             min-height:322px;
-            top: 280px;
+            top: 60px;
             left: 20px;
         }
 
@@ -206,14 +397,71 @@
 
 
 
+          
+
 }
 
 
+/* @media only screen and (min-width: 492px){
+    .navigation.inactive .toggle-button{
+
+        left: -36px;}
+} */
 
 /* 768*/
 @media only screen and (min-width: 768px) {
-    .navigation{
+
+    .main-header-main{
+        position: absolute;
+        width: 708px;
+        height: 60px;
+        max-width: 708px;
+        max-height: 60px;
+        left: calc(50% - 708px/2);
+        top: 30px;
+
+
+    }
+
+    .main-header{
+        max-width:100%;
+        width: 100%;
+        height: 60px;
+        max-height: 60px;
+        top:0px;
+        left:0px;
+    }
+
+    .navigation.inactive{
         display:block;
+    }
+
+    .navigation.inactive{
+        position: absolute;
+        width: 443px;
+        height: 27px;
+        max-width: 443px;
+        max-height: 27px;
+        left: 265px;
+        top: 16px;
+  
+        
+    }
+
+    .logo{
+        left: 3px;
+    }
+    
+
+
+    .nav-links{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navigation.inactive .toggle-button {
+        display: none;
     }
 
     .navigation{
@@ -224,9 +472,7 @@
         top: 16px;
     
     } 
-    .toggle-button{
-        display: none;
-    }
+
     .puppy{
     
         max-width: 569px; 
@@ -243,12 +489,7 @@
     }
 
 
-    .not-only{
-        max-width:460px;
-        min-height:322px;
-        left: -127px;
-        top: 3px;
-    }
+
 
     .button-main{
         left: 130px;
@@ -257,34 +498,64 @@
 
 
     .start-screen{
+        width: 100%;
+        max-width: 100%;
+        height: 1165px;
         max-height: 1165px;
     }
     .start-screen-wrapper{
+        width: 100%;
+        max-width: 100%;
         height: 1165px;
+        max-height: 1165px;
     }
 
     .site-info{
         position: absolute;
-        max-width: 569px;
+        width: 569px;
         height: 1015px;
+        max-width: 569px;
+        max-height: 1015px;
+        left: 99px;
         top: 150px;
-        bottom: 0px;
-        /* left: calc((768px - 569px) / 2); */
-        left: 280px;
+        
+        
       
     }
-  
-    .main-header{
-        max-width:708px;
-        width: 93.75%;
-        height: 60px;
-        top:30px;
-        left:30px;
+    .not-only{
+  /* Content */
+
+        position: absolute;
+        width: 460px;
+        height: 322px;
+        max-width: 460px;
+        max-height: 322px;
+        left: 55px;
+        top: 0px;
+
+
     }
-    
+
+    .not-only-header{
+        position: absolute;
+        width: 310px;
+        height: 114px;
+        max-width: 310px;
+        max-height: 114px;
+        left: calc(50% - 310px/2 - 75px);
+        bottom: 208px;
+
+    }
+
     .paragraph-1{
+        position: absolute;
+        width: 460px;
+        height: 72px;
         max-width: 460px;
         max-height: 72px;
+        left: calc(50% - 460px/2);
+        top: 155px;
+        bottom: 94px;
     }
 
 
@@ -430,6 +701,27 @@
 
 
 @media only screen and (min-width: 1020px) {
+
+    .main-header-main{
+        position: absolute;
+        width: 980px;
+        height: 60px;
+        max-width: 980px;
+        max-height: 60px;
+        left: calc(50% - 980px/2);
+        top: 30px;
+
+    }    
+    .main-header{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+ 
+
     .puppy{
         max-width: 600px; 
         right: 0px;
@@ -539,23 +831,53 @@
 
 @media only screen and (min-width: 1280px) {
     .start-screen{
+
         max-width: 1280px;
-        width: 100%;
+        width: 1280px;
         max-height: 908px;
         height: 908px;
-        top: 0;
-        left: 0;
+    
+        margin: auto;
     }
 
     .start-screen-wrapper{
         height: 908px;
+        max-height: 908px;
+        width: 100%;
+        max-width: 100%;
+       
     }
+
 
     .puppy{
         left: calc(50% - 698px/2 + 251px);
         top: 180px;
         max-width: 698px; 
     }
+
+    .site-info{
+        position: absolute;
+        width: 1200px;
+        height: 728px;
+        max-width: 1200px;
+        max-height: 728px;
+        left: calc((100% - 1200px) / 2); 
+
+        top: 180px;
+
+    }
+    .not-only{
+        position: absolute;
+        width: 460px;
+        height: 322px;
+        max-width: 460px;
+        max-height: 322px;
+        left: 0px;
+        top: 163px;
+
+    }
+
+
 
     .puppy-image{
         top: 0;
@@ -569,15 +891,26 @@
             left: 0px;
         }
 
+    .main-header-main{
+        position: absolute;
+        width: 1200px;
+        height: 60px;
+        left: calc(50% - 1268px/2);
+        /* top: calc(50% - 60px/2); */
+        top: 0px;
+    }    
     .main-header{
+        position: absolute;
+        width: 1200px;
+        height: 60px;
         max-width: 1200px;
-            width: 93.75%;
-            height: 60px;
-            top:30px;
-            left:39px;
-        }    
+        max-height: 60px;
+        left: 39px;
+        top: 32px;
+    }    
+ 
 
-        .navigation{
+    .navigation.inactive{
             position: absolute;
             width: 443px;
             height: 27px;
@@ -585,6 +918,15 @@
             top: 16px;
 
         }      
+    
+    .navigation.active{
+            position: absolute;
+            width: 443px;
+            height: 27px;
+            left: 758px;
+            top: 16px;
+
+        }         
 
 
 }
