@@ -11,55 +11,63 @@
     <link rel="stylesheet" href="css/style.css ">
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/burger.css">
     <link rel="stylesheet" href="css/adaptiv-main-start-screen.css">
     <link rel="stylesheet" href="css/adaptiv-main-not-only.css">
     <link rel="stylesheet" href="css/adptiv-main-pets.css">
     <link rel="stylesheet" href="css/adaptive-main-help.css">
     <link rel="stylesheet" href="css/adaptive-main-money.css">
     <link rel="stylesheet" href="css/adaptiv-main-footer.css">
+
     <!-- <script src="scripts/index.js"></script> -->
 </head>
 <body>
     <div class="start-screen-wrapper">
     <div class="start-screen">
 
-    <header class="main-header">
-        <div class="logo">
-            <h1 class="logo-header"><a href="#noscroll">Cozy House</a></h1>
-            <p class="logo-text">Shelter for pets in Boston</p>
+
+
+        <div class="main-header-main">
+            <header class="main-header">
+                <div class="logo">
+                    <h1 class="logo-header"><a href="index.html">Cozy House</a></h1>
+                    <p class="logo-text">Shelter for pets in Boston</p>
+                </div>
+        
+                <nav class="navigation inactive">
+                    <ul class="nav-links">
+        
+                        <li><a class="main-link  about-link" href="index.html">About the shelter</a></li>         
+                        <li><a class="main-link" href="pets.html">Our pets</a></li>
+                        <li><a  class="main-link" href="index.html#help">Help the shelter</a></li>
+                        <li> <a  class="main-link" href="#contacts">Contacts</a></li>
+                    </ul>
+        
+                    <div class="toggle-button">
+                        <a href="#" class="toggle-button-line">
+                            <span class="bar1"></span>
+                            <span class="bar2"></span>
+                            <span class="bar3"></span>
+                        </a>  
+                    </div>
+                </nav>
+        
+            </header>
+            </div>
+        
+
+
+        <div class="site-info">
+        <div class="not-only">
+            <h2 class="not-only-header">Not only people <br> need a house</h2>
+            <p class="paragraph-1">We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
+            <div class="button-main"><a href="#our-friends" class="text-make-fr">Make a friend</a></div>
         </div>
-        <nav class="navigation">
+        </div>
 
-
-            <ul class="nav-links">
-                <li><a class="main-link about-link" href="">About the shelter</a><li>         
-                <li><a class="main-link our-pets-link" href="pets.html">Our pets</a></li> 
-                <li><a  class="main-link help-shelter-link" href="#help">Help the shelter</a></li>
-                <li> <a  class="main-link" href="#contacts">Contacts</a></li>
-            </ul>
-        </nav>
-        <div class="toggle-button">
-        <a href="#" class="toggle-button-line">
-            <span class="bar1"></span>
-            <span class="bar2"></span>
-            <span class="bar3"></span>
-        </a>  
-         </div>
-    </header>
-
-
-
-    <div class="site-info">
-    <div class="not-only">
-        <h2>Not only people <br> need a house</h2>
-        <p class="paragraph-1">We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
-        <div class="button-main"><a href="#our-friends" class="text-make-fr">Make a friend</a></div>
-    </div>
-    </div>
-
-    <div class="puppy">
-        <img class="puppy-image" src="img/start-screen-puppy.png" alt="puppy">
-    </div>
+        <div class="puppy">
+            <img class="puppy-image" src="img/start-screen-puppy.png" alt="puppy">
+        </div>
 
     </div>
     </div>
@@ -319,6 +327,7 @@
 
 </div> 
 
+<script src="scripts/burger.js"></script>
 
 </body>
 </html>
