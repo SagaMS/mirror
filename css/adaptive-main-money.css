@@ -409,6 +409,32 @@
     }
 }
 
+@media only screen and (min-width: 1020px) {
+    .main-section-main-page{
+        
+        position: absolute;
+        width: 100%;
+        max-width: 100%;
+        top: 908px;
+        left: 0px;
+        /*must change in future*/
+        height: 3027px;
+        max-height: 3027px;
+        
+    } 
+
+}
+
+
+@media only screen and (min-width: 1150px) {
+
+        .main-section-main-page{
+            top: 908px;
+        }
+    }
+
+
+
 
 @media only screen and (min-width: 1280px){
 
