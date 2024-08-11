@@ -9,13 +9,10 @@
         left: 0%;
         right: 0%;
         top: 0px;
-        overflow: hidden;
+ 
     }
+  
 
-    .navigation{
-        display: none;
-      
-    }
 
     .main-header{
         position: absolute;
@@ -25,51 +22,179 @@
         bottom: 25%;
         width: 100%;
         max-width: 100%;
-
+        
     }
 
-    .toggle-button{
-        position: absolute;
+    .logo{
+
+        width: 184px;
+        max-width: 184px;
+        max-height: 60px;
+        height: 60px;
+
+        top: 0px;
+    }
+
+
+    .nav-links{
+        display: none;
+    }
+
+/* INACTIVE*/
+
+    .navigation.inactive .toggle-button{
+        position: absolute; 
+        display: block;
         width: 30px;
         height: 22px;
         max-width: 30px;
         max-height: 22px;
-        left: calc(100% - 71px); 
-        /* left: 600px; */
-        top: 17px;
 
+    }
+        .navigation.inactive {
+            display: block;
+            width: 30px;
+            height: 22px;
+            max-width: 30px;
+            max-height: 22px;
+
+            left:calc(100% - 80px); 
+            top: 19px;
+        }
+
+
+    .navigation.inactive .toggle-button .toggle-button-line .bar1,
+    .navigation.inactive .toggle-button .toggle-button-line .bar2,
+   .navigation.inactive .toggle-button .toggle-button-line .bar3{ 
+   
+           position: absolute;
+           width: 30px;
+           height: 0px;
+           left: 0px;
+     
+           border: 2px solid #000000;
+        }
+   
+        .navigation.inactive .toggle-button .toggle-button-line .bar1{
+          top:2px;
+       }
+       .navigation.inactive .toggle-button .toggle-button-line .bar2{
+           top: 12px;
+       }
+       .navigation.inactive .toggle-button .toggle-button-line .bar3{
+           top: 22px;
+       }
+    /* ACTIVE*/
+    .navigation.active .nav-links .main-link.about-link::after{
+        width: 125px;
+    }
+
+
+
+    .navigation.active .toggle-button{
+        position:absolute;
+        width: 30px;
+        height: 30px;
+        max-width: 30px;
+        max-height: 30px;
+        left: 274px;
+        top: 45px;
+    }
+
+    .navigation.active{
+        /* mobile-menu-320 */
+            z-index:100;
+            position: absolute;
+            width: 320px;
+            height: 823px;
+            max-width: 320px;
+            max-height: 823px;
+            top:-30px;
+            right: 25px;
+            background: #292929;
+    }
+
+    .navigation.active .nav-links{
+        z-index:100;
+        display: block;
+        position: absolute;
+        width: 243px;
+        height: 327px;
+        max-width: 243px;
+        max-height: 327px;
+        left: 39px;
+        top: 248px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .navigation.active .nav-links .main-link{
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height:  51px;
+        /* or 51px */
+
+        /* color-light-s */
+        color: #FAFAFA;
 
     }
 
-    .bar1, .bar2, .bar3{
-        position: absolute;
-        width: 30px;
-        height: 0px;
-        left: 0px;
-  
-        border: 2px solid #000000;
-     }
 
-     .bar1{
-        top: 2px;
-     }
-     .bar2{
-        top: 12px;
-     }
-     .bar3{
-        top: 22px;
-     }
+    .navigation.active .toggle-button .toggle-button-line{
+        display: block;
+        width: 30px;
+        max-width: 30px;
+        height: 30px;
+        max-height: 30px;
+    }
+    .navigation.active .toggle-button .toggle-button-line .bar1,
+    .navigation.active .toggle-button .toggle-button-line .bar2,
+    .navigation.active .toggle-button .toggle-button-line .bar3
+    {
+    
+        border: 1px solid #F1CDB3;
+        height: 30px;
+        max-height: 30px;
+
+        
+    }
+
+    .navigation.active .toggle-button .toggle-button-line .bar1{
+        position: absolute;
+        left:0px;
+ 
+     
+    }
+    .navigation.active .toggle-button .toggle-button-line .bar2{
+        position: absolute;
+        left:10px;
+
+
+    }
+    .navigation.active .toggle-button .toggle-button-line .bar3{
+        position: absolute;
+        left:20px;
+
+    }
+
+
+
 }
 
 
 @media only screen and (min-width: 768px) {
-    .toggle-button{
+     .navigation.inactive .toggle-button{
         display: none;
-    }
+     }
 
-    .navigation{
+    .nav-links{
         display: block;
     }
+
 
     .header-pets{
         position: absolute;
@@ -91,7 +216,12 @@
 
     }
 
-    .navigation{
+    .nav-links{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+    }
+    .navigation.inactive{
         position: absolute;
         width: 443px;
         height: 27px;
@@ -102,15 +232,18 @@
         top: 16px;
 
 
+
     }
 }
 
 
 @media only screen and (min-width: 1100px){
-    .navigation{
+    .navigation.inactive{
 
         left: calc(100% - 550px); 
     }
+
+
 }
 
 
@@ -139,7 +272,7 @@
 
     }
 
-    .navigation{
+    .navigation.inactive{
         position: absolute;
         width: 443px;
         max-width: 443px;
