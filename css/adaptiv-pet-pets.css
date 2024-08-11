@@ -1,0 +1,263 @@
+@media only screen and (min-width: 320px) {
+
+
+.main-section-pets-page{
+    position: absolute;
+    height: 1649px;
+    max-height: 1649px;
+    width: 100%;
+    max-width: 100%;
+    left: 0%;
+    right: 0%;
+    top: 120px;
+
+}
+
+.friends{
+
+    position: absolute;
+    height: 1649px;
+    left: 0%;
+    right: 0%;
+    top: 0px;
+    width: 100%;
+    max-width: 100%;
+
+
+}
+
+.friends-inner-block{
+    position: absolute;
+    width: 300px;
+    height: 1565px;
+    max-width: 300px;
+    max-height: 1565px;
+    left: calc(50% - 300px/2);
+    top: 42px;
+}
+
+
+.friends-block-header{
+    width: 300px;
+    max-width: 300px;
+    height: 64px;
+    max-height: 64px;
+    left: calc(50% - 289px/2);
+    top: 0px;
+}
+
+.friends-block-header h3 {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+}
+    
+
+.pet-block{
+    position: absolute;
+    width: 270px;
+    max-width: 270px;
+    height: 1365px;
+    max-height: 1365px;
+    left: 15px;
+    top: 106px;
+    
+    
+}
+
+.noshow320{
+    display: none;
+}
+
+.slider-pet{
+    position: absolute;
+    width: 300px;
+    max-width: 300px;
+    height: 52px;
+    max-height: 52px;
+    left: 0px;
+    top: 1513px;
+
+}
+
+.pet:first-child{
+    top: 0px;
+}
+}
+
+
+@media only screen and (min-width: 768px) {
+    .noshow320{
+        display: block;
+    }
+
+    .noshow768{
+        display: none;
+    }
+
+
+    .main-section-pets-page{
+        position: absolute;
+        height: 1733px;
+        max-height: 1733px;
+        width: 100%;
+        max-width: 100%;
+        left: 0%;
+        right: 0%;
+        top: 120px;
+
+    }
+
+    .friends{
+        position: absolute;
+        height: 1733px;
+        max-height: 1733px;
+        width: 100%;
+        max-width: 100%;
+        left: 0%;
+        right: 0%;
+        top: 0px;
+    }
+
+    .friends-inner-block{
+        position: absolute;
+        width: 708px;
+        max-width: 708px;
+        height: 1603px;
+        max-height: 1603px;
+        left: calc(50% - 708px/2);
+        top: 60px;
+
+    }
+
+
+    .friends-block-header{
+        
+        position: absolute;
+        width: 400px;
+        max-width: 400px;
+        height: 90px;
+        max-height: 90px;
+        left: calc(50% - 400px/2);
+        top: 20px;
+    }
+    .friends-block-header h3{
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 45px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em; 
+    }
+
+    .pet-block{
+        position: absolute;
+        width: 580px;
+        max-width: 580px;
+        height: 1365px;
+        max-height: 1365px;
+        left: 64px;
+        top: 140px;
+        gap: 26.9px;
+
+    }
+
+    .slider-pet{
+        position: absolute;
+        width: 340px;
+        max-width: 340px;
+        height: 52px;
+        max-height: 52px;
+        left: 184px;
+        top: 1545px;
+    }
+
+    .pet{
+        top: 0px;
+    }
+    
+
+    /* .pet:first-child{
+        top: 0px;
+    } */
+}
+
+@media only screen and (min-width: 1280px){
+    .main-section-pets-page{
+        position: absolute;
+        height: 1342px;
+        max-height: 1342px;
+        left: 0%;
+        right: 0%;
+        top: 120px;
+    }
+
+    .noshow768{
+        display: block;
+    }
+    .friends{
+        position: absolute;
+        height: 1342px;
+        max-height: 1342px;
+        left: 0%;
+        right: 0%;
+        top: 0px;
+    }
+
+    .friends-inner-block{
+        position: absolute;
+        width: 1200px;
+        max-width: 1200px;
+        height: 1162px;
+        max-height: 1162px;
+        left: calc(50% - 1200px/2);
+        top: 80px;
+    }
+
+    .friends-block-header{
+        position: absolute;
+        width: 400px;
+        max-width: 400px;
+        height: 90px;
+        max-height: 90px;
+        left: calc(50% - 400px/2);
+        top: 0px;
+    }
+    .pet-block{
+        position: absolute;
+        width: 1200px;
+        max-width: 1200px;
+        height: 930px;
+        max-height: 930px;
+        left: 0px;
+        top: 135px;
+        padding-top: 15px;
+        padding-bottom: 14px;
+
+    }
+
+    .slider-pet{
+        position: absolute;
+        width: 340px;
+        max-width: 340px;
+        height: 52px;
+        max-height: 52px;
+        left: 430px;
+        top: 1110px;
+
+    }
+
+
+
+
+}

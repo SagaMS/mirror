@@ -1,0 +1,153 @@
+@media only screen and (min-width: 320px) {
+
+    .header-pets{
+        position: absolute;
+        height: 120px;
+        max-height: 120px;
+        width: 100%;
+        max-width: 100%;
+        left: 0%;
+        right: 0%;
+        top: 0px;
+        overflow: hidden;
+    }
+
+    .navigation{
+        display: none;
+      
+    }
+
+    .main-header{
+        position: absolute;
+        left: 6.25%;
+        right: 6.25%;
+        top: 25%;
+        bottom: 25%;
+        width: 100%;
+        max-width: 100%;
+
+    }
+
+    .toggle-button{
+        position: absolute;
+        width: 30px;
+        height: 22px;
+        max-width: 30px;
+        max-height: 22px;
+        left: calc(100% - 71px); 
+        /* left: 600px; */
+        top: 17px;
+
+
+    }
+
+    .bar1, .bar2, .bar3{
+        position: absolute;
+        width: 30px;
+        height: 0px;
+        left: 0px;
+  
+        border: 2px solid #000000;
+     }
+
+     .bar1{
+        top: 2px;
+     }
+     .bar2{
+        top: 12px;
+     }
+     .bar3{
+        top: 22px;
+     }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .toggle-button{
+        display: none;
+    }
+
+    .navigation{
+        display: block;
+    }
+
+    .header-pets{
+        position: absolute;
+        height: 120px;
+        max-height: 120px;
+        max-width: 100%;
+        width: 100%;
+        left: 0%;
+        right: 0%;
+        top: 0px;
+    }
+
+    .main-header{
+        position: absolute;
+        left: 3.91%;
+        right: 3.91%;
+        top: 25%;
+        bottom: 25%;
+
+    }
+
+    .navigation{
+        position: absolute;
+        width: 443px;
+        height: 27px;
+        max-width: 443px;
+        max-height: 27px;
+        left: calc(100% - 502px); 
+        /* left: 265px; */
+        top: 16px;
+
+
+    }
+}
+
+
+@media only screen and (min-width: 1100px){
+    .navigation{
+
+        left: calc(100% - 550px); 
+    }
+}
+
+
+@media only screen and (min-width: 1280px){
+
+    .header-pets{
+        
+        position: absolute;
+        height: 120px;
+        max-height: 120px;
+        width: 100%;
+        max-width: 100%;
+        left: 0%;
+        right: 0%;
+        top: 0px;
+    }
+
+    .main-header{
+        position: absolute;
+        width: 1200px;
+        max-width: 1200px;
+        height: 60px;
+        max-height: 60px;
+        left: calc(50% - 1200px/2);
+        top: calc(50% - 60px/2);
+
+    }
+
+    .navigation{
+        position: absolute;
+        width: 443px;
+        max-width: 443px;
+        height: 27px;
+        max-height: 27px;
+        left: 757px;
+        top: 16px;
+
+
+    }
+}
