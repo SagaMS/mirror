@@ -1,0 +1,52 @@
+.popup{
+
+width: 952px;
+height: 552px;
+opacity: 1;
+left: 25%;
+top: 25%;
+z-index: 100;
+}
+.overlay {
+    position: fixed;
+    left: 0; 
+    right: 0; 
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(41, 41, 41, 0.6);
+    display: block;
+
+  }
+.popup-close-block{
+
+    width: 52px;
+    height: 52px;
+    left: 890px;
+    top: 0px;
+    background-color: gainsboro;
+    cursor: pointer;
+    
+} 
+
+  .overlay.overlay-active{
+    z-index: 100;
+  } 
+
+  .overlay.overlay-inactive{
+    z-index: 0;
+  } 
+
+ .popup.pop-inactive{
+    opacity: 0; 
+    pointer-events: none; 
+
+}
+ .popup.pop-active{
+    z-index: 10;
+    opacity: 1; 
+    pointer-events: all;
+    background-color: aquamarine;
+
+}
