@@ -293,7 +293,21 @@ justify-content:space-between; */
     
     width: 270px;
     height: 435px;
+    /* transition: all 5s ease-in-out; */
+
 }
+
+.pet.animin{
+    animation: fade-in;
+    animation-duration: 1s;
+}
+
+
+@keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
 
 .katrine{
     margin-left: -35px;
@@ -309,7 +323,8 @@ justify-content:space-between; */
     top: 0%;
     bottom: 37.93%;
     border-radius: 9px 9px 0px 0px;
-
+    /* opacity: 0.3; */
+    transition: all 1s ease-in-out; 
 }
 
 .animal-name{
