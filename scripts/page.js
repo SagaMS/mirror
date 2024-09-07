@@ -121,7 +121,7 @@ function changePet(object, index){
 }
 
 
-// changePet(dataPets8[2], 0)
+
 
 //8  6 pages
 //6  8 pages

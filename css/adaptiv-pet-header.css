@@ -36,13 +36,13 @@
     }
 
 
- .nav-links{
+ /* .nav-links{
         display: none;
-    } 
+    }  */
 
 /* INACTIVE*/
 
-    .navigation.inactive .toggle-button{
+  /*  .navigation.inactive .toggle-button{
         position: absolute; 
         display: block;
         width: 30px;
@@ -83,8 +83,11 @@
        }
        .navigation.inactive .toggle-button .toggle-button-line .bar3{
            top: 22px;
-       }
+       } */
+
     /* ACTIVE*/
+
+    /*
     .navigation.active .nav-links .main-link.about-link::after{
         width: 125px;
     }
@@ -99,11 +102,12 @@
         max-height: 30px;
         left: 27px;
         top: 45px;
-    }
-
-    .navigation.active{
+    }  */
+      
+/*
+.navigation.active{
         /* mobile-menu-320 */
-            z-index:100;
+            /* z-index:100;
             position: absolute;
             width: 320px;
             height: 823px;
@@ -111,10 +115,9 @@
             max-height: 823px;
             top:-30px;
             right: 25px;
-            background: #292929;
-    }
+            background: #292929; }    */ 
 
-    .navigation.active .nav-links{
+    /* .navigation.active .nav-links{
         z-index:100;
         display: block;
         position: absolute;
@@ -127,10 +130,9 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        text-align: center;
-    }
+        text-align: center; } */
 
-    .navigation.active .nav-links .main-link{
+    /* .navigation.active .nav-links .main-link{
         font-family: 'Arial';
         font-style: normal;
         font-weight: 400;
@@ -139,12 +141,10 @@
         /* or 51px */
 
         /* color-light-s */
-        color: #FAFAFA;
-
-    }
+        /* color:#FAFAFA; } */ 
 
 
-    .navigation.active .toggle-button .toggle-button-line{
+    /* .navigation.active .toggle-button .toggle-button-line{
         display: block;
         width: 30px;
         max-width: 30px;
@@ -161,8 +161,8 @@
         max-height: 30px;
 
         
-    }
-
+    } */
+/* 
     .navigation.active .toggle-button .toggle-button-line .bar1{
         position: absolute;
         left:0px;
@@ -179,7 +179,7 @@
         position: absolute;
         left:20px;
 
-    }
+    } */
 
 
 
@@ -187,13 +187,13 @@
 
 
 @media only screen and (min-width: 768px) {
-     .navigation.inactive .toggle-button{
+     /* .navigation.inactive .toggle-button{
         display: none;
      }
 
     .nav-links{
         display: block;
-    }
+    } */
 
 
     .header-pets{
@@ -216,7 +216,7 @@
 
     }
 
-    .nav-links{
+    /* .nav-links{
         display: block;
         display: flex;
         justify-content: space-between;
@@ -228,23 +228,22 @@
         max-width: 443px;
         max-height: 27px;
         left: calc(100% - 502px); 
-        /* left: 265px; */
+        /* left: 265px; 
         top: 16px;
+    } */
 
-
-
-    }
+    
 }
 
 
-@media only screen and (min-width: 1100px){
+/* @media only screen and (min-width: 1100px){
     .navigation.inactive{
 
         left: calc(100% - 550px); 
     }
 
 
-}
+} */
 
 
 @media only screen and (min-width: 1280px){
@@ -272,7 +271,7 @@
 
     }
 
-    .navigation.inactive{
+    /* .navigation.inactive{
         position: absolute;
         width: 443px;
         max-width: 443px;
@@ -282,5 +281,5 @@
         top: 16px;
 
 
-    }
+    } */
 }
