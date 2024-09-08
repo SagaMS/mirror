@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="css/style.css ">
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" href="css/header.css">
-    <!-- <link rel="stylesheet" href="css/burger.css"> -->
     <link rel="stylesheet" href="css/adaptiv-main-start-screen.css">
     <link rel="stylesheet" href="css/adaptiv-main-not-only.css">
     <link rel="stylesheet" href="css/adptiv-main-pets.css">
@@ -19,14 +18,22 @@
     <link rel="stylesheet" href="css/adaptive-main-money.css">
     <link rel="stylesheet" href="css/adaptiv-main-footer.css">
     <link rel="stylesheet" href="css/popup.css">
-
+    <link rel="stylesheet" href="css/burger.css"> 
     <!-- <script src="scripts/index.js"></script> -->
      <!-- <script src="scripts/self-score-2.js"></script> -->
 </head>
 <body>
-<div class="overlay"> 
+<div class="overlay overlay-inactive"> 
 <div class="popup pop-inactive">
-    <div class="popup-close-block"><a href="#noscroll"><img src="img/vector.png" alt=""></a></div>
+    <div class="popup-close-block">
+        <!-- <a href="#noscroll"> -->
+            
+            
+            <img  class="popup-close-block-image" src="img/vector.png" alt="">
+        
+        <!-- </a> -->
+    
+    </div>
 
 
     <div class="popup-content-block">
@@ -39,10 +46,12 @@
             <p class="description">Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.</p>
 
             <div class="popup-animal-info">
-                <p class="age">Age: 2 months</p>
-                <p class="inoculations">Inoculations: none</p>
-                <p class="diseases">Diseases: none</p>
-                <p class="parasites">Parasites: none</p>
+                <ul class="popup-animal-info-list">
+                    <li class="age"><span class="make-bold">Age:</span> 2 months</li>
+                    <li class="inoculations">Inoculations: none</li>
+                    <li class="diseases">Diseases: none</li>
+                    <li class="parasites">Parasites: none</li>
+            </ul>
             </div>
         </div>
     </div>
@@ -50,6 +59,10 @@
 
 
 </div>
+
+
+
+
     <div class="start-screen-wrapper">
     <div class="start-screen">
     
@@ -62,7 +75,18 @@
                     <p class="logo-text">Shelter for pets in Boston</p>
                 </div>
         
-                <nav class="navigation inactive">
+
+
+
+
+
+
+
+<!-- <div class="overflow-nav-active"> -->
+
+                <nav class="navigation">
+
+                <!-- <nav class="navigation inactive">     -->
                     <ul class="nav-links">
         
                         <li><a class="main-link  about-link" href="index.html">About the shelter</a></li>         
@@ -80,6 +104,15 @@
                     </div>
                 </nav>
         
+
+<!-- </div> -->
+
+
+
+
+
+
+
             </header>
             </div>
         
@@ -147,6 +180,7 @@
                     <p class="animal-name">Katrine</p>
                     <a class="learn-more" href="#noscroll">Learn more</a>
                 </div>
+     
 
                 <div class="pet jennifer hidden-now320">
                     <img class="pet-photo"  src="img/pets-jennifer.png" alt="jennifer">
@@ -158,8 +192,6 @@
                     <p class="animal-name">Woody</p>
                     <a  class="learn-more"  href="#noscroll">Learn more</a>
                 </div>
-
-
 
 
                 <div class="arrow arrow-right">
@@ -359,10 +391,11 @@
 
 </div> 
 
-<script src="scripts/burger.js"></script>
-<script src="scripts/slider.js"></script>
-<script src="scripts/popup.js"></script>
+<script src="scripts/slider2.js"></script>
 
+
+<script src="scripts/popup.js"></script>
+<script src="scripts/burger.js"></script> 
 
 </body>
 </html>
