@@ -55,3 +55,11 @@ document.addEventListener('click', (e)=>{
 })
 
 
+function addNavActive(){
+    if (window.innerWidth<=768) {
+        navigation.classList.add('inactive')
+}
+}
+
+window.onresize =  addNavActive;
+addNavActive();

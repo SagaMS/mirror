@@ -12,7 +12,7 @@
         height: 22px;
         max-width: 30px;
         max-height: 22px;
-        animation:  moveintoggleout 3s linear;  
+        animation:  moveintoggleout 1.2s linear;  
   
     }
 
@@ -74,7 +74,7 @@
 
             right: 45px;  
             top: 19px;
-            animation:  moveout 3s linear; 
+            animation:  moveout 1.2s linear; 
         }
 
         @keyframes moveout{
@@ -156,7 +156,7 @@
         right: 0px; 
         background: #292929;
    
-        animation:  movein 3s linear;
+        animation:  movein 1.2s linear;
     }
 
 
@@ -209,7 +209,7 @@
       
         top: 45px;
         right: 45px;
-        animation: moveintoggle 3s linear;
+        animation: moveintoggle 1.2s linear;
     }
 
     @keyframes moveintoggle{
@@ -325,7 +325,9 @@
         display: flex;
         justify-content: space-between;
     }
-    .navigation.inactive{
+
+
+   .navigation.inactive{
         position: absolute;
         width: 443px;
         height: 27px;
@@ -333,8 +335,10 @@
         max-height: 27px;
         left: calc(100% - 502px); 
         /* left: 265px; */
-        top: 16px;
-    }
+      top: 16px;
+    } 
+
+
 
 }
 
@@ -361,7 +365,9 @@
 
 
 
-    .navigation.inactive{
+
+
+   .navigation.inactive{
         position: absolute;
         width: 443px;
         max-width: 443px;
@@ -371,5 +377,6 @@
         top: 16px;
 
 
-    }
-}
+    } 
+
+ }

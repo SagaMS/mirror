@@ -12,7 +12,7 @@
         height: 22px;
         max-width: 30px;
         max-height: 22px;
-        animation:  moveintoggleout 3s linear;  
+        animation:  moveintoggleout 1.2s linear;  
   
     }
 
@@ -67,7 +67,7 @@
 
             right: 45px;  
             top: 19px;
-            animation:  moveout 3s linear; 
+            animation:  moveout 1.2s linear; 
         }
 
         @keyframes moveout{
@@ -149,7 +149,7 @@
         right: 0px; 
         background: #292929;
    
-        animation:  movein 3s linear;
+        animation:  movein 1.2s linear;
     }
 
 
@@ -202,7 +202,7 @@
       
         top: 45px;
         right: 45px;
-        animation: moveintoggle 3s linear;
+        animation: moveintoggle 1.2s linear;
     }
 
     @keyframes moveintoggle{
