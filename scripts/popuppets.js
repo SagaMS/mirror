@@ -104,7 +104,7 @@ function showAnimal(arr){
             index = i
         }  
     }
-    let petName = pet[index].getElementsByClassName('animal-name')[0].textContent
+    let petName = pet[index].getElementsByClassName('pet-name')[0].textContent
     return petName
 
 }

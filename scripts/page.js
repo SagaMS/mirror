@@ -121,7 +121,7 @@ function changePet(object, index){
 }
 
 
-// changePet(dataPets8[2], 0)
+
 
 //8  6 pages
 //6  8 pages
@@ -297,26 +297,23 @@ function changePage(number0fpage){
 
 function shuffleArray(a, s){
 
-    
+  
+
+    const shuffle = (arr) => {
+      let j, x, i;
+      for (i = arr.length - 1; i > 0; i--) {
+          j = Math.floor(Math.random() * (i + 1));
+          x = arr[i];
+          arr[i] = arr[j];
+          arr[j] = x;
+         
+      }
+      return arr;
 
 
-    const shuffle = (array) => {
-           let m = array.length, t, i;
-       
-           // Пока есть элементы для перемешивания
-           while (m) {
-       
-           // Взять оставшийся элемент
-           i = Math.floor(Math.random() * m--);
-       
-           // И поменять его местами с текущим элементом
-           t = array[m];
-           array[m] = array[i];
-           array[i] = t;
-           }
-       
-           return array;
        }
+
+
    
    let size = s //размер подмассива
    let subarray = []; //массив в который будет выведен результат.

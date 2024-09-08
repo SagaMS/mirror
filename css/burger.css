@@ -1,0 +1,368 @@
+@media only screen and (min-width: 320px) {
+
+
+
+    .nav-links{
+        display: none;
+    } 
+    .navigation.inactive .toggle-button{
+        position: absolute; 
+        display: block;
+        width: 30px;
+        height: 22px;
+        max-width: 30px;
+        max-height: 22px;
+        animation:  moveintoggleout 1.2s linear;  
+  
+    }
+
+
+    @keyframes moveintoggleout{
+        0%   {right: 45px; 
+                top:45px;
+            transform: rotate(-90deg);;
+        }
+        25%  {right: 45px; 
+            top:45px;
+            transform: rotate(-67.5deg);;
+        }
+        75%  {right: 45px;
+            top:45px;
+            transform: rotate(-45deg);;
+        }
+        100% {right: 45px;
+            top:45px;
+            transform: rotate(0deg);;
+         }
+
+    } 
+
+
+   @keyframes moveintoggle{
+        0%   {right: 320px; 
+            transform: rotate(90deg);;
+        }
+        25%  {right: 220px; 
+            transform: rotate(67.5deg);;
+        }
+        75%  {right: 120px;
+            transform: rotate(45deg);;
+        }
+        100% {right: 45px;
+            transform: rotate(0deg);;
+         }
+
+    } 
+
+
+
+
+        .navigation.inactive {
+            display: block;
+
+            max-height: 22px;
+            height: 22px;
+            width: 30px;
+            max-width: 30px;  
+
+            right: 45px;  
+            top: 19px;
+            animation:  moveout 1.2s linear; 
+        }
+
+        @keyframes moveout{
+            0%   {
+                height: 100vh;
+                max-height: 100vh; 
+                width: 320px;
+                max-width: 320px;
+                background: #292929;
+                right: 0px;
+                top: -27px;
+                z-index: 100;
+
+                    }
+            25%  {
+                height: 100vh;
+                max-height: 100vh; 
+                width: 240px;
+                max-width: 240px;
+                background: #292929;
+                right: 0px;
+                top: -27px;
+                z-index: 100;
+
+             }
+            75%  {
+                height: 100vh;
+                max-height: 100vh; 
+                width: 160px;
+                max-width: 160px;
+                background: #292929;
+                right: 0px;
+                top: -27px;
+                z-index: 100;
+
+             }
+             99% {
+                height: 100vh;
+                 max-height: 100vh; 
+                 width: 80px;
+                 max-width: 80px;
+                 background: #292929;
+                 right: 0px;
+                 top: -27px;
+                 z-index: 100;
+
+             }
+
+            100% {
+                max-height: 22px;
+                height: 22px;
+
+                width: 30px;
+                max-width: 30px;  
+              
+                right: 45px;  
+                top: 19px;
+            }
+        }
+  
+
+        
+    .navigation.active{
+        /* mobile-menu-320 */
+        z-index:100;
+        position: absolute;
+    
+
+            
+          /* height: 823px;
+         max-height: 823px;  */
+
+        height: 100vh;
+        max-height: 100vh; 
+        width: 320px;
+        max-width: 320px;
+          
+        top:-30px;
+        right: 0px; 
+        background: #292929;
+   
+        animation:  movein 1.2s linear;
+    }
+
+
+    @keyframes movein{
+        0%   {right: -320px; 
+                }
+        25%  {right: -220px; }
+        75%  {right: -120px; }
+        100% {right: 0px; }
+    }
+
+    
+
+
+    .navigation.inactive .toggle-button .toggle-button-line .bar1,
+    .navigation.inactive .toggle-button .toggle-button-line .bar2,
+   .navigation.inactive .toggle-button .toggle-button-line .bar3{ 
+   
+           position: absolute;
+           width: 30px;
+           height: 0px;
+           left: 0px;
+     
+           border: 2px solid #F1CDB3;;
+        }
+   
+        .navigation.inactive .toggle-button .toggle-button-line .bar1{
+          top:2px;
+       }
+       .navigation.inactive .toggle-button .toggle-button-line .bar2{
+           top: 12px;
+       }
+       .navigation.inactive .toggle-button .toggle-button-line .bar3{
+           top: 22px;
+       }
+    /* ACTIVE*/
+    .navigation.active .nav-links .main-link.about-link::after{
+        /* ACHTUNG!!!!!*/
+        width: 242px;
+    }
+
+
+
+    .navigation.active .toggle-button{
+        position:absolute;
+        width: 30px;
+        height: 30px;
+        max-width: 30px;
+        max-height: 30px;
+      
+        top: 45px;
+        right: 45px;
+        animation: moveintoggle 1.2s linear;
+    }
+
+    @keyframes moveintoggle{
+        0%   {right: 320px; 
+            transform: rotate(90deg);;
+        }
+        25%  {right: 220px; 
+            transform: rotate(67.5deg);;
+        }
+        75%  {right: 120px;
+            transform: rotate(45deg);;
+        }
+        100% {right: 45px;
+            transform: rotate(0deg);;
+         }
+
+    }
+
+
+
+
+
+
+    .navigation.active .nav-links{
+        z-index:100;
+        display: block;
+        position: absolute;
+        width: 243px;
+        height: 327px;
+        max-width: 243px;
+        max-height: 327px;
+        left: 39px;
+        top: 248px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .navigation.active .nav-links .main-link{
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height:  51px;
+        /* or 51px */
+
+        /* color-light-s */
+        color: #FAFAFA;
+
+    }
+
+
+    .navigation.active .toggle-button .toggle-button-line{
+        display: block;
+        width: 30px;
+        max-width: 30px;
+        height: 30px;
+        max-height: 30px;
+        /* left: 220px; */
+      
+    }
+    .navigation.active .toggle-button .toggle-button-line .bar1,
+    .navigation.active .toggle-button .toggle-button-line .bar2,
+    .navigation.active .toggle-button .toggle-button-line .bar3
+    {
+    
+        border: 1px solid #F1CDB3;
+        height: 30px;
+        max-height: 30px;
+
+        
+    }
+
+    .navigation.active .toggle-button .toggle-button-line .bar1{
+        position: absolute;
+        left:0px;
+ 
+     
+    }
+    .navigation.active .toggle-button .toggle-button-line .bar2{
+        position: absolute;
+        left:10px;
+
+
+    }
+    .navigation.active .toggle-button .toggle-button-line .bar3{
+        position: absolute;
+        left:20px;
+
+    }
+
+
+}
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+
+    .navigation.inactive .toggle-button{
+        display: none;
+
+   
+     }
+
+    .nav-links{
+        display: block;
+    }
+    .nav-links{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+    }
+    .navigation.inactive{
+        position: absolute;
+        width: 443px;
+        height: 27px;
+        max-width: 443px;
+        max-height: 27px;
+        left: calc(100% - 502px); 
+        /* left: 265px; */
+        top: 16px;
+    }
+
+}
+
+
+
+
+
+
+@media only screen and (min-width: 1100px){
+    .navigation.inactive{
+
+        left: calc(100% - 550px); 
+    }
+
+
+}
+
+
+@media only screen and (min-width: 1280px){
+
+        .navigation{
+            z-index: 9999;
+        }
+
+
+
+    .navigation.inactive{
+        position: absolute;
+        width: 443px;
+        max-width: 443px;
+        height: 27px;
+        max-height: 27px;
+        left: 757px;
+        top: 16px;
+
+
+    }
+}

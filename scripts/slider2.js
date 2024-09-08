@@ -1,4 +1,4 @@
-const dP =  [
+const dataPets =  [
     {
       "name": "Jennifer",
      "img": "img/pets-jennifer.png",
@@ -90,118 +90,228 @@ const dP =  [
     }
   ]
 
-let popup = document.getElementsByClassName('popup')[0]
+  function makeTwoArray(arr, sub = null){
 
-let pet = document.getElementsByClassName('pet')
-
-let overlay = document.getElementsByClassName('overlay')[0]
-let html = document.getElementsByTagName('html')[0]
-
-function showAnimal(arr){
-    let index  = null
-    for (let i= 0; i < arr.length; i++) {
-        if(arr[i] === true){
-            index = i
-        }  
-    }
-    let petName = pet[index].getElementsByClassName('animal-name')[0].textContent
-    return petName
-
-}
-
-
-
-function makePopup(name){
-    for (let index = 0; index < dP.length; index++) {
-        const element = dP[index].name;
-        if(element === name){
-            const petName =  dP[index].name
-            const petImage = dP[index].img
-            const petType = dP[index].type
-            const petBreed = dP[index].breed
-            const petDescription = dP[index].description
-            const petAge =  dP[index].age
-            const petInoculations = dP[index].inoculations
-            const petDiseases =  dP[index].diseases
-            const petParasites = dP[index].parasites
-
-            let popName =  document.getElementsByClassName('popup-name')[0]
-            popName.innerHTML = petName
-
-            let popImage = document.getElementsByClassName('popupImage')[0]
-            popImage.src = petImage
-
-            let popTypeBreed = document.getElementsByClassName('type-breed')[0]
-            popTypeBreed.innerHTML = `${petType} - ${petBreed}`
-
-            let popDescription = document.getElementsByClassName('description')[0]
-            popDescription.innerHTML = petDescription
-
-            let popAge = document.getElementsByClassName('age')[0]
-            popAge.innerHTML = `<span class="make-bold">Age:</span> ${petAge}`
-
-            let popInoculations = document.getElementsByClassName('inoculations')[0]
-            popInoculations.innerHTML = `<span class="make-bold">Inoculations:</span> ${petInoculations}`
-
-            let popDiseases = document.getElementsByClassName('diseases')[0]
-            popDiseases.innerHTML =  `<span class="make-bold">Diseases:</span> ${petDiseases}`
-
-            let popParasites = document.getElementsByClassName('parasites')[0]
-            popParasites.innerHTML = `<span class="make-bold">Parasites:</span> ${petParasites}`
-
-        }
-
-
-      
-    }
-}
-
-
-document.addEventListener('click', (e)=>{
-
-
-
-    const withinBoundaries = e.composedPath().includes(popup);
-    const arrayPets = []
-
-    for(let i = 0; i < pet.length; i++){
-
-        const petarea = e.composedPath().includes(pet[i])
-        arrayPets.push(petarea)
-    }    
-
-    if(arrayPets.includes(true)){
-     let nameoftargetanimal = showAnimal(arrayPets)   
-     makePopup(nameoftargetanimal)   
+    function shuffle(arr) {
+      let j, x, i;
+      for (i = arr.length - 1; i > 0; i--) {
+          j = Math.floor(Math.random() * (i + 1));
+          x = arr[i];
+          arr[i] = arr[j];
+          arr[j] = x;
+         
+      }
+      return arr;
     
     }
+    if(sub === null){
+      let wholeArray = shuffle(arr);
+      return [wholeArray.slice(0,3), wholeArray.slice(3,6)];
+    }else{
+    
+      let arr0 = sub
+      let wholeArray = shuffle(arr);
+      let possiblearr = wholeArray.slice(0,3)
+    
+     for (let index = 0; index < arr0.length; index++) {
+      if(possiblearr.includes(arr0[index])){
+        return makeTwoArray(arr, sub)
+      }
+    
+     }
+    
+     return [arr0, possiblearr];
+    }
+    
+    }
+    
+    
+
+  const drawpage =(arr) =>{
+      const pet1 = document.getElementsByClassName('animal-name')[0]
+      const pet2 = document.getElementsByClassName('animal-name')[1]
+      const pet3 = document.getElementsByClassName('animal-name')[2]
+      const pet1Photo = document.getElementsByClassName('pet-photo')[0]
+      const pet2Photo = document.getElementsByClassName('pet-photo')[1]
+      const pet3Photo = document.getElementsByClassName('pet-photo')[2]
+    
+    
+      const p1 = document.getElementsByClassName('pet')[0]
+      const p2 = document.getElementsByClassName('pet')[1]
+      const p3 = document.getElementsByClassName('pet')[2]
+    
 
 
-  if(arrayPets.includes(true) && popup.classList.contains('pop-inactive')){
-            popup.classList.remove('pop-inactive')
-            popup.classList.add('pop-active')
-            overlay.classList.add('overlay-active')
-            overlay.classList.remove('overlay-inactive')
-            html.style.overflow ='hidden'
-        }else if((!withinBoundaries && popup.classList.contains('pop-active')) 
-            || e.target.classList.contains('popup-close-block')
+      function a1(p){
+      p.animate([
+        // key frames
+        { transform: 'translateX(0px)' },
+        { transform: 'translateX(-1200px)' }
+      ], {
+        // sync options
+        duration: 2000,
+        iterations: 1
+      });
 
-            || e.target.classList.contains('popup-close-block-image')
-             ){
+          }
 
-         
-                popup.classList.remove('pop-active')
-                popup.classList.add('pop-inactive')
-                overlay.classList.remove('overlay-active')
-                overlay.classList.add('overlay-inactive')
-                html.style.overflow = 'visible';
-                 
-            }
-             
-     
+       function a(p){
+        p.animate([
+              {opacity:'0'},
+              {opacity:'0.25'},
+              {opacity:'0.50'},
+              {opacity:'0.75'},
+              {opacity:'1'}],
+              {
+                duration: 1800,
+                iterations: 1 
+              });
 
 
-        })
+
+      }
+
+      // a1(p1)
+      // a1(p2)
+      // a1(p3)
+
+      a(p1)
+      a(p2)
+      a(p3)
+    
+      pet1.textContent  = JSON.parse(JSON.stringify(dataPets[arr[0]])).name
+      pet2.textContent  = JSON.parse(JSON.stringify(dataPets[arr[1]])).name
+      pet3.textContent  = JSON.parse(JSON.stringify(dataPets[arr[2]])).name
+      
+    
+      pet1Photo.src = JSON.parse(JSON.stringify(dataPets[arr[0]])).img
+      pet2Photo.src = JSON.parse(JSON.stringify(dataPets[arr[1]])).img
+      pet3Photo.src = JSON.parse(JSON.stringify(dataPets[arr[2]])).img
+    
+    
+    }
+        
+
+const arrowLeft = document.getElementsByClassName('arrow-left')[0]
+const arrowRight = document.getElementsByClassName('arrow-right')[0]    
+
+
+
+let arr =[0, 1, 2, 3, 4, 5, 6, 7]
+
+
+let previous  = null
+
+
+let pages = makeTwoArray(arr)
+let page0 = pages[0]
+let page1 = pages[1]
+
+
+
+let flag = false
+
+drawpage(page0)
+
+
+arrowLeft.addEventListener('click', ()=>{
+
+   if(previous === null){
+
+
+
+    drawpage(page1)
+    flag = true
+    previous = 'left'
+
+   }
+
+   else if(previous === 'right'){
+
+
+
+    if(flag){
+
+      drawpage(page0)
+      flag = false
+    }else{  
+
+      drawpage(page1)
+      flag = true
+    }
+
+    previous = 'left'
+
+
+   }else if(previous === 'left'){
+
+    pages = makeTwoArray(arr, page1)
+
+    page0  = pages[0]
+    page1  = pages[1]
+
+
+    drawpage(page1)
+    flag = true
+
+    previous = 'left'
+
+
+
+    //место для перезагрузки страицы
+
+   }
+   
+})
+
+
+arrowRight.addEventListener('click', ()=>{
+
+  if(previous === null){
+    previous = 'right'
+
+
+    drawpage(page1)
+    flag = true
+
+   }
+   
+   
+   
+   else if(previous === 'left'){
+
+      previous = 'right'
+
+      if(flag){
+
+      drawpage(page0)
+      flag = false
+    }else{
+      drawpage(page1)
+      flag= true
+
+    }
+
+
+   }
+   
+   else if(previous === 'right'){
+
+    pages = makeTwoArray(arr, page1)
+    page0  = pages[0]
+    page1  = pages[1]
+  
+    drawpage(page1)
+    flag = true
+    previous = 'right'
+
+
+   }
+
+
+})
+
+
 
 
 
