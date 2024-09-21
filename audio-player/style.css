@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.footer{
+    max-width: 100%;
+    width: 100%;
+    height: 15vh;
+    background-color: black;
+}
+
+
+.main{
+height: 85vh;
+max-height: 85vh;
+}
+
+.player{
+    max-width: 50rem;
+    width: 50rem;
+    max-height: 10rem;
+    height: 10rem;
+
+        /*just for test*/
+        position: absolute;
+        top:125px;
+        left: 250px;
+            /*just for test*/
+}
+
+/*Play pause button*/
+
+.playpause img{
+    max-width: 3rem;
+    width: 3rem;
+    
+    /*just for test*/
+    position: absolute;
+    top:125px;
+    left: 250px;
+        /*just for test*/
+}
+
+.volume-icon img{
+    max-width: 1.7rem;
+    width: 1.7rem;
+}
+.playpause img:hover{
+    cursor: pointer;
+}
+
+
+.progress-bar{
+    width: 15rem;
+    max-width: 15rem;
+    height: 0.5rem;
+    max-height: 0.5rem;
+    background-color: black;
+         /*just for test*/
+         position: absolute;
+         top:125px;
+         left: 450px;
+              /*just for test*/
+}
+
+
+.volume-bar{
+    width: 1.7rem;
+    max-width: 1.7rem;
+    height: 15rem;
+    max-height: 15rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    
+
+         /*just for test*/
+         position: absolute;
+         top:15px;
+         left: 950px;
+              /*just for test*/
+}
+
+
+input[type=range][orient=vertical] {
+    writing-mode: vertical-lr;
+    direction: rtl;
+    appearance: slider-vertical;
+    width: 16px;
+    vertical-align: bottom;
+    width: 0.5rem;
+    max-width: 0.5rem;
+    height: 15rem;
+    max-height: 15rem;
+    display: flex;
+    align-self: center;
+  
+}
+
+#volume{
+    accent-color: black;
+}
