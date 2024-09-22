@@ -1,0 +1,233 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main */
+
+.main::before{
+    content: '';
+    position: absolute;
+    height: 85vh;
+    max-height: 85vh;
+    left: 0;
+    right: 0; 
+    top: 0;
+    bottom: 0; 
+    /* background: url(./assets/img/dontstartnow.png) center / cover no-repeat; */
+    filter: blur(0.5rem);
+    z-index: -1;
+
+}
+
+.main{
+    height: 85vh;
+    max-height: 85vh;
+    display: flex;
+    flex-direction: column;
+
+    }
+    
+/** My-player **/
+
+.my-player{
+
+    max-width: 270pt;
+    width: 270pt;
+    max-height:300pt; 
+    height: 300pt;
+
+    background-color: aqua;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+
+    font-weight: 600;
+    color: #fae9e9;
+    z-index: 100 ;
+
+}
+
+/**** Photo-block ****/
+    .photo-block{
+        max-width: 100%;
+        width: 100%;
+        max-height:75%; 
+        height: 75%;
+        border-radius: inherit;
+    }
+
+    .photo-block img{
+        border-radius: inherit;
+        max-width: 100%;
+        width: 100%;
+    }
+
+/**** player ****/
+
+    .player{
+        border-radius: inherit;
+        max-width: 100%;
+        width: 100%;
+        max-height:25%; 
+        height: 25%;
+        
+        display: flex;
+        flex-direction: row;
+        background-image: linear-gradient(45deg, rgb(77, 211, 24), rgb(30, 68, 4));
+    }
+
+
+    /****** All player stuff ******/
+    .left-player-part{
+        max-width: 85%;
+        width: 85%;
+        max-height:100%; 
+        height: 100%;
+  
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-player-part img{
+        max-width: 1.7rem;
+        width: 1.7rem;
+
+    }
+
+
+    .main-func-block{
+        max-width: 100%;
+        width: 100%;
+        max-height:60%; 
+        height: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+   
+    }
+
+    .playpause{
+        display: flex;
+        padding: 0.7rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title-of-song{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .duration-block{
+        max-width: 100%;
+        width: 100%;
+        max-height:40%; 
+        height: 40%;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+   
+    }
+
+    .progress-bar{
+      
+        width: 90%;
+        max-width: 90%;
+        height: 0.5rem;
+        max-height: 0.5rem;
+        background-color: #181717;
+        margin: auto;
+        cursor: pointer;
+    }
+    .current-progress-bar{
+        background: violet;
+        width: 0%;
+        height: 100%;
+    
+   
+    }
+
+    .time-of-song{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0.7rem;
+    }
+
+    .all-duration-time, .previous, .next, .playpause, #volume,.volume-icon 
+    {
+        cursor: pointer;
+    }
+    /****** Volume bar ******/
+    .volume-bar{
+        max-width: 15%;
+        width: 15%;
+        max-height:100%; 
+        height: 100%;
+      
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    input[type=range][orient=vertical] {
+        writing-mode: vertical-lr;
+        direction: rtl;
+        appearance: slider-vertical;
+
+        vertical-align: bottom;
+        width: 0.4rem;
+        max-width: 0.4rem;
+        height: 4rem;
+        max-height: 4rem;
+        display: flex;
+        align-self: center;
+      
+    }
+    .volume-icon img{
+        max-width: 1.7rem;
+        width: 1.7rem;
+    }
+
+    #volume{
+        accent-color:#181717;
+    }
+
+/* Foter */
+
+
+.footer{
+    max-width: 100%;
+    width: 100%;
+    height: 15vh;
+    max-height: 15vh;
+    background-color: rgb(46, 44, 44);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 400;
+    font-size: 1.7rem;
+    color: #cbd499;
+}
+
+
+
+.logo{
+    height: 15vh;
+    max-height: 15vh;
+    display: block;
+    margin-left: auto;
+  }
+
+  .git-link{
+    color: #cbd499;
+    text-decoration: none;
+  }
