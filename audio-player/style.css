@@ -33,21 +33,21 @@
 /** My-player **/
 
 .my-player{
-    /* position: relative; */
+
     max-width: 270pt;
     width: 270pt;
     max-height:300pt; 
     height: 300pt;
 
     background-color: aqua;
-    margin:8% auto;
+    margin: auto;
     display: flex;
     flex-direction: column;
     border-radius: 0.5rem;
 
     font-weight: 600;
     color: #fae9e9;
-    
+    z-index: 100 ;
 
 }
 
