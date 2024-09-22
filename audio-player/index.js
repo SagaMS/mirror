@@ -58,13 +58,30 @@ function playPauseAudio() {
   }
   
 
+//
+
+let songCount = 0
 function nextSong(){
-  
+  songCount ++;
+  if(songCount>3){
+    songCount = 0
+  }
+
+  changeContent(songCount)
+  audio.play()
 }
 
 
+function prevSong(){
+  songCount --;
+  if(songCount<0){
+    songCount =3
+  }
+  changeContent(songCount)
+  audio.play()
+}
 
-
+//
 
 
 
@@ -104,8 +121,7 @@ volume.addEventListener('change', function(){
 
 
 
-playPauseButton.addEventListener('click', playPauseAudio);
-nextButton.addEventListener('click', nextSong);
+
 
 setInterval(() => {
     
@@ -148,11 +164,14 @@ let funcarray = [
   }
 ]
 
+playPauseButton.addEventListener('click', playPauseAudio);
+nextButton.addEventListener('click', nextSong);
+previousButton.addEventListener('click', prevSong);
 
 ///
 let i = 0;
 window.onload = function() { 
-  changeContent(1)
+  changeContent(0)
 
   leftTime.addEventListener( 'click', function() {
     funcarray[i++ % funcarray.length](); 
