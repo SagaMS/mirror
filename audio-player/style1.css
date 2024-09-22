@@ -16,7 +16,7 @@
     right: 0; 
     top: 0;
     bottom: 0; 
-    background: url(assets/img/nineinch.png) center / cover no-repeat;
+    /* background: url(./assets/img/dontstartnow.png) center / cover no-repeat; */
     filter: blur(0.5rem);
     z-index: -1;
 
@@ -33,16 +33,21 @@
 /** My-player **/
 
 .my-player{
+    /* position: relative; */
     max-width: 270pt;
     width: 270pt;
     max-height:300pt; 
     height: 300pt;
-    border-radius:0.5rem;
+
     background-color: aqua;
-    margin: 15rem auto;
+    margin:10rem auto;
     display: flex;
     flex-direction: column;
+    border-radius: 0.5rem;
 
+    font-weight: 600;
+    color: #fae9e9;
+    
 
 }
 
@@ -52,10 +57,11 @@
         width: 100%;
         max-height:75%; 
         height: 75%;
-   
+        border-radius: inherit;
     }
 
     .photo-block img{
+        border-radius: inherit;
         max-width: 100%;
         width: 100%;
     }
@@ -63,14 +69,17 @@
 /**** player ****/
 
     .player{
+        border-radius: inherit;
         max-width: 100%;
         width: 100%;
         max-height:25%; 
         height: 25%;
-        background-color: rgb(217, 255, 0);
+        
         display: flex;
         flex-direction: row;
+        background-image: linear-gradient(45deg, rgb(77, 211, 24), rgb(30, 68, 4));
     }
+
 
     /****** All player stuff ******/
     .left-player-part{
@@ -78,24 +87,71 @@
         width: 85%;
         max-height:100%; 
         height: 100%;
-        background-color: red;
+  
+        display: flex;
+        flex-direction: column;
     }
 
     .left-player-part img{
         max-width: 1.7rem;
         width: 1.7rem;
+
     }
 
 
     .main-func-block{
+        max-width: 100%;
+        width: 100%;
+        max-height:60%; 
+        height: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+   
+    }
 
+    .playpause{
+        display: flex;
+        padding: 0.7rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title-of-song{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
 
     .duration-block{
-
+        max-width: 100%;
+        width: 100%;
+        max-height:40%; 
+        height: 40%;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+   
     }
 
+    .progress-bar{
+      
+        width: 90%;
+        max-width: 90%;
+        height: 0.5rem;
+        max-height: 0.5rem;
+        background-color: #181717;
+        margin: auto;
+    }
 
+    .time-of-song{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0.7rem;
+    }
 
     /****** Volume bar ******/
     .volume-bar{
@@ -103,7 +159,7 @@
         width: 15%;
         max-height:100%; 
         height: 100%;
-        background-color: green;
+      
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -129,6 +185,10 @@
         width: 1.7rem;
     }
 
+    #volume{
+        accent-color:#181717;
+    }
+
 /* Foter */
 
 
@@ -138,4 +198,24 @@
     height: 15vh;
     max-height: 15vh;
     background-color: rgb(46, 44, 44);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 400;
+    font-size: 1.7rem;
+    color: #cbd499;
 }
+
+
+
+.logo{
+    height: 15vh;
+    max-height: 15vh;
+    display: block;
+    margin-left: auto;
+  }
+
+  .git-link{
+    color: #cbd499;
+    text-decoration: none;
+  }

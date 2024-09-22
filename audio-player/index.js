@@ -1,20 +1,51 @@
 const audio = document.querySelector('audio');
 const playPauseButton = document.querySelector('.playpause');
-const playPauseImage = document.querySelector('.playpause-image')
-const volume = document.getElementById('volume')
+const nextButton  = document.querySelector('.next');
+const previousButton  = document.querySelector('.previous');
+const playPauseImage = document.querySelector('.playpause-image');
+const volume = document.getElementById('volume');
+const artistNameStr = document.querySelector('.artist-name');
+const songTitleString = document.querySelector('.song-name');
+const photoOfAlbum = document.getElementById('album-photo');
+const currentTime = document.querySelector('.current-time');
+const leftTime = document.querySelector('.all-duration-time');
 
-let songs = ['./assets/music/beyonce.mp3', './assets/music/dontstartnow.mp3', './assets/music/colser.mp3', './assets/music/neleiche.mp3',]
 
+let songs = ['./assets/audio/beyonce.mp3', './assets/audio/dontstartnow.mp3', './assets/audio/closer.mp3', './assets/audio/neleiche.mp3',]
+let artist = ['Beyonce', 'Dua Lipa', 'Nine Inch Nails', "SDP"]
+let songsTitle = ["Don't Hurt Yourself", "Don't Start Now", "Closer", "Nr Leiche"]
+let songImg =['./assets/img/lemonade.png', './assets/img/dontstartnow.png', './assets/img/nineinch.png',
+  './assets/img/sdp.png']
 
+  function secondsToMinutes(s, minus = false){
+
+    const zero = 2;
+ 
+
+    let seconds = parseInt(s);
+    let minutes = parseInt(seconds / 60);
+    seconds -= minutes * 60;
+    minutes = minutes.toString().padStart(zero, '0')
+    seconds = seconds.toString().padStart(zero, '0')
+    if(!minus){
+    return `${minutes}:${seconds}`;
+  }else{
+    return `-${minutes}:${seconds}`
+    }
+    
+    }
+
+  
 
 let isOn = false;
 function playPauseAudio() {
 
     if(!isOn){
-        audio.currentTime = 0;
+   
         audio.play();
         isOn = true
         playPauseImage.src = 'assets/svg/pause.png'
+
    
     }else{
         audio.pause();
@@ -23,6 +54,45 @@ function playPauseAudio() {
     }
   
   }
+  
+
+function nextSong(){
+  
+}
+
+
+
+
+
+
+
+function changeContent(n){ 
+  
+  audio.src = songs[n];
+
+  artistNameStr.innerHTML = artist[n];
+  songTitleString.innerHTML = songsTitle[n];
+  photoOfAlbum.src = songImg[n];
+  let mainEl = document.querySelector('.main');
+  let url = songImg[n];
+
+ document.styleSheets[0].addRule('.main::before', `background:  url(${url})  center / cover no-repeat;`);
+
+
+
+    audio.addEventListener('loadedmetadata', function(){
+    leftTime.innerHTML = secondsToMinutes(audio.duration);
+  })
+
+
+
+
+}
+
+
+
+
+
 
 volume.addEventListener('change', function(){
 
@@ -33,3 +103,33 @@ volume.addEventListener('change', function(){
 
 
 playPauseButton.addEventListener('click', playPauseAudio);
+nextButton.addEventListener('click', nextSong);
+
+setInterval(() => {
+    
+    let current = audio.currentTime;
+    currentTime.innerHTML = secondsToMinutes(current);
+
+}, 500);
+
+///
+
+leftTime.addEventListener('click', function(){
+  setInterval(() => {
+    
+    let current = audio.currentTime;
+    let alltime = audio.duration
+    leftTime.innerHTML = secondsToMinutes(alltime-current, minus = true)
+
+}, 500);
+})
+
+
+
+
+///
+window.onload = function() { 
+  changeContent(1)
+  
+}
+

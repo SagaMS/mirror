@@ -11,7 +11,7 @@
 
         <div class="my-player">
             <div class="photo-block">
-                <img src="assets/img/nineinch.png" alt="">
+                <img id="album-photo" src="assets/img/nineinch.png" alt="">
             </div>
             <div class="player">
             <audio src="assets/audio/closer.mp3"></audio>
@@ -37,7 +37,7 @@
                 
                 <div class="duration-block">
                     <div class="progress-bar">
-                        <div class="current-progress-bar"></div>
+                        <div class="current-progress-bar">&nbsp;</div>
                     </div>
                     <div class="time-of-song">
                         <div class="current-time">00:00</div>
@@ -46,7 +46,23 @@
     
     
                 </div>
+                
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             <div class="volume-bar">
                     <input id="volume" type="range"  orient="vertical" min="0" max="100" value="50" class="volume-range">
@@ -62,10 +78,16 @@
 
     </main>
 
-
     <footer class="footer">
-
+        <p>
+        © 2024
+         <!-- by Irina Mezentseva -->
+        </p>
+        <a class="git-link" href="https://github.com/SagaMS" >GIT HUB</a>
+        <a href="https://rs.school/courses/javascript-preschool-ru"> <img class="logo" src ='assets/svg/rs-school-logo.svg' alt ='rs-school-logo'></a>
+       
     </footer>
+  
 <script src="index.js"></script>
 </body>
 </html>
