@@ -144,6 +144,14 @@
         max-height: 0.5rem;
         background-color: #181717;
         margin: auto;
+        cursor: pointer;
+    }
+    .current-progress-bar{
+        background: violet;
+        width: 0%;
+        height: 100%;
+    
+   
     }
 
     .time-of-song{
@@ -153,6 +161,11 @@
         padding: 0.7rem;
     }
 
+    .all-duration-time, .previous, .next, .playpause, #volume
+    /* ,.volume-icon */
+    {
+        cursor: pointer;
+    }
     /****** Volume bar ******/
     .volume-bar{
         max-width: 15%;

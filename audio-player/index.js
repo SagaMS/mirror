@@ -9,6 +9,8 @@ const songTitleString = document.querySelector('.song-name');
 const photoOfAlbum = document.getElementById('album-photo');
 const currentTime = document.querySelector('.current-time');
 const leftTime = document.querySelector('.all-duration-time');
+const progressbar = document.querySelector('.progress-bar')
+const currentprogressbar = document.querySelector('.current-progress-bar')
 
 
 let songs = ['./assets/audio/beyonce.mp3', './assets/audio/dontstartnow.mp3', './assets/audio/closer.mp3', './assets/audio/neleiche.mp3',]
@@ -110,26 +112,51 @@ setInterval(() => {
     let current = audio.currentTime;
     currentTime.innerHTML = secondsToMinutes(current);
 
+    currentprogressbar.style.width = `${audio.currentTime / audio.duration * 100}%`
+      
+ 
+  
+
 }, 500);
 
-///
 
-leftTime.addEventListener('click', function(){
-  setInterval(() => {
+progressbar.addEventListener("click", e => {
+  const progressbarWidth = window.getComputedStyle(progressbar).width;
+  const toJump = e.offsetX / parseInt(progressbarWidth) * audio.duration;
+  audio.currentTime = toJump;
+}, false);
+
+
+
+let timebackward;
+let funcarray = [
+  function(){
+      timebackward =  setInterval(() => {
     
-    let current = audio.currentTime;
+      let current = audio.currentTime;
+      let alltime = audio.duration
+      leftTime.innerHTML = secondsToMinutes(alltime-current, minus = true)
+      isMinus= true
+  }, 500);
+// alert(1)
+  }, 
+  function(){
+    clearInterval(timebackward);
     let alltime = audio.duration
-    leftTime.innerHTML = secondsToMinutes(alltime-current, minus = true)
-
-}, 500);
-})
-
-
+    leftTime.innerHTML = secondsToMinutes(alltime)
+    // alert(2)
+  }
+]
 
 
 ///
+let i = 0;
 window.onload = function() { 
   changeContent(1)
-  
+
+  leftTime.addEventListener( 'click', function() {
+    funcarray[i++ % funcarray.length](); 
+}
+  )
 }
 
