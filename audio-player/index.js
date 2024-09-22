@@ -11,6 +11,8 @@ const currentTime = document.querySelector('.current-time');
 const leftTime = document.querySelector('.all-duration-time');
 const progressbar = document.querySelector('.progress-bar')
 const currentprogressbar = document.querySelector('.current-progress-bar')
+const muteButton = document.querySelector('.volume-icon');
+const muteButtonImg = document.querySelector('.volume-icon-img');
 
 
 let songs = ['./assets/audio/beyonce.mp3', './assets/audio/dontstartnow.mp3', './assets/audio/closer.mp3', './assets/audio/neleiche.mp3',]
@@ -116,8 +118,17 @@ function changeContent(n){
 volume.addEventListener('change', function(){
 
    audio.volume = this.value /100;
-})
+   
+   
+  if(audio.volume === 0){
 
+    muteButtonImg.src = 'assets/svg/mutebutton.png';
+  }else{
+    muteButtonImg.src = 'assets/svg/volume-button.png';
+  
+  }
+
+})
 
 
 
@@ -154,15 +165,34 @@ let funcarray = [
       leftTime.innerHTML = secondsToMinutes(alltime-current, minus = true)
       isMinus= true
   }, 500);
-// alert(1)
+
   }, 
   function(){
     clearInterval(timebackward);
     let alltime = audio.duration
     leftTime.innerHTML = secondsToMinutes(alltime)
-    // alert(2)
+
   }
 ]
+
+
+
+let volumeChnageFunction = [
+  function(){
+    volume.value  = 0; 
+    audio.volume = 0;
+    muteButtonImg.src = 'assets/svg/mutebutton.png';},
+
+    function(){
+      volume.value  = 50; 
+      audio.volume = 0.5;
+      muteButtonImg.src = 'assets/svg/volume-button.png';}
+
+
+]
+
+
+
 
 playPauseButton.addEventListener('click', playPauseAudio);
 nextButton.addEventListener('click', nextSong);
@@ -170,12 +200,18 @@ previousButton.addEventListener('click', prevSong);
 
 ///
 let i = 0;
+let m  = 0;
 window.onload = function() { 
   changeContent(0)
 
   leftTime.addEventListener( 'click', function() {
     funcarray[i++ % funcarray.length](); 
-}
-  )
+});
+
+
+muteButton.addEventListener('click', function(){
+    volumeChnageFunction[m++ % volumeChnageFunction.length]();
+});
+
 }
 
