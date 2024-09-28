@@ -1,56 +1,65 @@
-// let form = document.querySelector(".search-form");
-// function showImage(arr){
-//   const img = document.getElementsByClassName('image')
-//   console.log(img)
-//   for (let index = 0; index < img.length; index++) {
-//     const element = img[index];
-//      element.src = arr[index]['url_m']
-//      element.alt = arr[index]['title']
-//   }
-// }
-
-
-// form.addEventListener("submit", function (e) {
-// e.preventDefault() 
-
-// let formdata = new FormData(this);
-// let tag = formdata.get("image-search");
-
-
-// const url =`https://www.flickr.com/services/rest/?method=flickr.photos.search&per_page=30&api_key=0f15ff623f1198a1f7f52550f8c36057&tags=${tag}&tag_mode=all&extras=url_m&format=json&nojsoncallback=1`
-
-
-
-// async function getData() {
-//   const res = await fetch(url);
-//   const data = await res.json();
-
-//   showImage(data['photos']['photo'])
-
-// }
-// getData();
-
-// });
-
-
-
 const search = document.getElementById('search')
 const magnify = document.querySelector('.magnify')
+const img = document.getElementsByClassName('.image')
 search.focus()
 
+function formURL(){
+  let tag = search.value
+  if(tag !==''){
+   url =`https://www.flickr.com/services/rest/?method=flickr.photos.search&per_page=30&api_key=0f15ff623f1198a1f7f52550f8c36057&tags=${tag}&tag_mode=all&extras=url_m&format=json&nojsoncallback=1`
+  }else{
+    url = 'https://www.flickr.com/services/rest/?method=flickr.photos.search&per_page=30&api_key=0f15ff623f1198a1f7f52550f8c36057&tags=spring,nature&tag_mode=all&extras=url_m&format=json&nojsoncallback=1'
+  }
 
-function jennaortega(){
-  
-    alert("Jenna Ortega")
+  return url;
 }
 
+let url;
+
+
+function showImage(arr){
+  const img = document.getElementsByClassName('image')
+  // console.log(img)
+  for (let index = 0; index < img.length; index++) {
+    const element = img[index];
+     element.src = arr[index]['url_m']
+     element.alt = arr[index]['title']
+  }
+}
+
+
+
+async function getData() {
+  url =  formURL()
+  const res = await fetch(url);
+  const data = await res.json();
+
+  showImage(data['photos']['photo'])
+}
+
+getData();
+
+
+
+
 search.addEventListener('keypress', function(e){
-  if (e.key == "Enter") {
-    jennaortega();
+  if (e.key === "Enter") {
+  
+    url = formURL()
+    getData()
  }
 }
 
 )
 
 
-magnify.addEventListener('click', jennaortega)
+magnify.addEventListener('click', function(){
+    url = formURL()
+    getData()
+}
+ )
+
+
+
+
+ 
