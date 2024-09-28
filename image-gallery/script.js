@@ -1,6 +1,8 @@
-const search = document.getElementById('search')
-const magnify = document.querySelector('.magnify')
-const img = document.getElementsByClassName('.image')
+const search = document.getElementById('search');
+const magnify = document.querySelector('.magnify');
+const img = document.getElementsByClassName('.image');
+const moreButton = document.querySelector('.show-more');
+const imageBlock = document.querySelector('.images');
 search.focus()
 
 function formURL(){
@@ -60,6 +62,15 @@ magnify.addEventListener('click', function(){
  )
 
 
+let click = 7;
+ moreButton.addEventListener('click', function(){
+  if(click<=27){
+ imageBlock.innerHTML += ' <img class="image" src="" alt=""> ' ;
+  getData()
+  click ++;
+}else{
+  moreButton.innerHTML = 'End of Image Row'
+}
+}
 
-
- 
+ )
