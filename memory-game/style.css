@@ -37,6 +37,10 @@
     color: rgb(213, 222, 135);
 }
 
+.level{
+  font-size: 3rem;
+  color: #cea10c;
+}
 
 .mute img{
     width: 2.5rem;
@@ -109,6 +113,10 @@
 
 .card .face{
   display: none;
+}
+
+.card .cover{
+  display: block;
 }
 
 .card.flip .face{
