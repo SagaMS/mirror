@@ -16,13 +16,6 @@ let playername = prompt('What is your name?')
       ;
     }
     displayname(playername);
-    // const a= new Audio('audio/audio.mp3')
-    // let v = a.play()
-    // if(v=== undefined){
-    // a.play()
-    // a.loop = true;
-    // a.volume = 0.35
-    // }
 
 
 
@@ -87,8 +80,8 @@ function flipflop(){
     const flip = document.querySelectorAll('.flip')
     if(flip.length<2){
 
-        // this.classList.toggle('flip')
-        this.classList.add('flip')
+    //   this.classList.toggle('flip')
+       this.classList.add('flip')
         chechcards(level)
      
   
