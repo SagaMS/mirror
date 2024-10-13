@@ -9,6 +9,28 @@
     src: url(fonts/Rye-Regular.ttf);
   }
 
+
+.linkstyle{
+  text-decoration: none;
+}
+
+.linkstyle:link, .linkstyle:visited{
+  color: rgb(213, 222, 135);
+}
+.linkstyle:hover{
+  color: #cea10c;
+}
+
+.linkstyle:active{
+  color: brown;
+}
+
+/* a:link - a normal, unvisited link
+a:visited - a link the user has visited
+a:hover - a link when the user mouses over it
+a:active - a link the moment it is clicked */
+
+
 .main{
 
     /* height: 100%;
@@ -27,8 +49,10 @@
 .info{
     max-width: 100%;
     width: 100%;
-    height: 5rem;
-    max-height: 5rem;
+     height: 100%;
+    max-height:  100%;
+    /* height: 5rem;
+    max-height: 5rem; */
     display: flex;
     justify-content: space-between;
     padding: 2rem;
@@ -42,6 +66,10 @@
   color: #cea10c;
 }
 
+.mute{
+  cursor: pointer;
+}
+
 .mute img{
     width: 2.5rem;
     height: 2.5rem;
@@ -51,16 +79,7 @@
 
 }
 
-.controls{
-    width: 20rem;
-    max-width: 20rem;
-    height: 5rem;
-    max-height: 5rem;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    justify-items: center;
-}
+
 /*Board block*/
 
 .board{
@@ -105,7 +124,7 @@
 .card:hover, .card:active{
   background: rgb(155, 153, 153);
   border: 0.3rem solid rgb(255, 166, 0);
-  transition: 0.7s;
+  transition: 1.2s;
 }
 
 

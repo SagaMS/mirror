@@ -1,3 +1,31 @@
+function mainloop(){
+
+
+    function displayname(playername){
+    const getname =  document.getElementById('player-name');
+    
+     getname.innerHTML += `Name: ${playername}`
+        
+    }
+    
+
+let playername = prompt('What is your name?')
+
+    if(playername === null || playername === ''){
+        playername = 'Player';
+      ;
+    }
+    displayname(playername);
+    // const a= new Audio('audio/audio.mp3')
+    // let v = a.play()
+    // if(v=== undefined){
+    // a.play()
+    // a.loop = true;
+    // a.volume = 0.35
+    // }
+
+
+
 const board = document.querySelector('.board')
 
 function drawScore(score){
@@ -27,12 +55,18 @@ function chechcards(level){
             }, 1000);
          
     
-
+           count +=1;
            score+=100;
-           drawScore(score)
+        drawScore(score)
+ 
        }else{
+
+
+
+     count+=1;
      score -=10;
-     drawScore(score)
+   drawScore(score)
+
     }
   
 
@@ -53,7 +87,8 @@ function flipflop(){
     const flip = document.querySelectorAll('.flip')
     if(flip.length<2){
 
-        this.classList.toggle('flip')
+        // this.classList.toggle('flip')
+        this.classList.add('flip')
         chechcards(level)
      
   
@@ -120,7 +155,6 @@ function placeCard(cards){
         
     }
 
-    //  flipper()
 }
 
 
@@ -132,33 +166,64 @@ function drawResults(level){
 
 function game(score, level){
    
-    // const playername = prompt('What is your name? ')
-    const playername = 'Jenna'
+
     if(level===1){
+
         placeCard(6)
-      
         flipper( level)
         drawResults(level)
     
     }else if(level ===2){
-        placeCard(12)
+
+        placeCard(8)
         flipper(level)
         drawResults(level)
     }else if(level ===3){
-        placeCard(20);
+
+        placeCard(12)
         flipper(level)
         drawResults(level)
     }else{
+     
+        const play = {
+            Pname: playername,
+            score:score,
+            count:count
+          };
+          
+        const  uniqueID  = Math.floor(Math. random()*10000)
+  
+        if(Object.entries(localStorage).length<10){
+            localStorage.setItem(uniqueID, JSON.stringify(play));
+        }else{
+           
+            localStorage.removeItem(Object.entries(localStorage)[0][0]); 
+            localStorage.setItem(uniqueID, JSON.stringify(play));
+        }
+       
+
 
         board.innerHTML += 
-        `<div class="final-game"> Game over ${playername}! Your final score is ${score}!</div>`
+        `<div class="final-game"> Game over ${playername}! Your final score is ${score}! It tooks ${count} moves</div>`
 
 
     }
 
 }
 
-let score = 0
-game(score, 1)
 
 
+
+    let count = 0;
+    let score = 0;
+    game(score, 1, count)
+ }
+
+
+
+ window.addEventListener("load", function () {
+    mainloop()
+  });
+
+
+// localStorage.clear()
