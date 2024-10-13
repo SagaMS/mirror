@@ -11,10 +11,19 @@ function mainloop(){
 
 let playername = prompt('What is your name?')
 
-    if(playername === null){
+    if(playername === null || playername === ''){
         playername = 'Player';
+      ;
     }
     displayname(playername);
+    // const a= new Audio('audio/audio.mp3')
+    // let v = a.play()
+    // if(v=== undefined){
+    // a.play()
+    // a.loop = true;
+    // a.volume = 0.35
+    // }
+
 
 
 const board = document.querySelector('.board')
@@ -51,6 +60,9 @@ function chechcards(level){
         drawScore(score)
  
        }else{
+
+
+
      count+=1;
      score -=10;
    drawScore(score)

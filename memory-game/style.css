@@ -66,6 +66,10 @@ a:active - a link the moment it is clicked */
   color: #cea10c;
 }
 
+.mute{
+  cursor: pointer;
+}
+
 .mute img{
     width: 2.5rem;
     height: 2.5rem;
@@ -120,7 +124,7 @@ a:active - a link the moment it is clicked */
 .card:hover, .card:active{
   background: rgb(155, 153, 153);
   border: 0.3rem solid rgb(255, 166, 0);
-  transition: 0.7s;
+  transition: 1.2s;
 }
 
 
