@@ -1,0 +1,19 @@
+
+@font-face{
+    font-family:'Rye-Regular';
+    src: url(fonts/Rye-Regular.ttf);
+  }
+
+
+.list-results{
+    width: 55rem;
+    max-width: 55rem;
+    font-family:'Rye-Regular';
+    font-size: 2.5rem;
+    color: #cea10c;
+
+}
+
+.diffrencolor{
+    color: rgb(241, 129, 129);;
+}
